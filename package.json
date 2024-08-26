@@ -4,7 +4,7 @@
   "description": "Angular Grid",
   "license": "MIT",
   "scripts": {
-    "ng": "nx",
+    "ng": "npx nx",
     "start": "./node_modules/.bin/nx serve",
     "build-grid": "ng build ngrid --configuration production && ng build ngrid-material --configuration production && ng build ngrid-bootstrap --configuration production && ng build ngrid-cypress --configuration production",
     "test": "ng test",
