@@ -65,17 +65,18 @@ export abstract class PblNgridBaseRowComponent<TRowType extends GridRowType, T =
   }
 
   ngOnInit() {
+  }
+
+  ngAfterViewInit(): void {
     if (!this.grid) {
       if (typeof ngDevMode === 'undefined' || ngDevMode) {
         throw new Error(`When a grid row is used outside the scope of a grid, you must provide the grid instance.`);
       }
     }
     this.resolveTokens();
+
     this.element.setAttribute('data-rowtype', this.rowType);
     this._extApi.rowsApi.addRow(this)
-  }
-
-  ngAfterViewInit(): void {
     for (const c of this._extApi.columnStore.getColumnsOf(this)) {
       this._createCell(c);
     }

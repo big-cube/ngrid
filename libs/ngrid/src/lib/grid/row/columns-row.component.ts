@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ElementRef, Input, ViewEncapsulation, Optional, ComponentRef, Attribute, ChangeDetectorRef, OnDestroy, OnInit, Inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Input, ViewEncapsulation, Optional, ComponentRef, Attribute, ChangeDetectorRef, OnDestroy, OnInit, Inject, AfterViewInit } from '@angular/core';
 import { CdkHeaderRow } from '@angular/cdk/table';
 import { PblMetaRowDefinitions, unrx } from '@pebula/ngrid/core';
 
@@ -26,7 +26,7 @@ import { PblNgridColumnDef } from '../column/directives/column-def';
   changeDetection: ChangeDetectionStrategy.Default,
   encapsulation: ViewEncapsulation.None,
 })
-export class PblNgridColumnRowComponent extends PblNgridBaseRowComponent<'header' | 'footer', PblMetaRowDefinitions> implements PblMetaRow, OnInit, OnDestroy {
+export class PblNgridColumnRowComponent extends PblNgridBaseRowComponent<'header' | 'footer', PblMetaRowDefinitions> implements PblMetaRow, OnInit, AfterViewInit,OnDestroy {
 
   @Input() set row(value: PblMetaRowDefinitions) { this.updateRow(value); }
 
@@ -36,7 +36,7 @@ export class PblNgridColumnRowComponent extends PblNgridBaseRowComponent<'header
   set meta(value: PblMetaRowDefinitions) { this._meta = value; } // TODO: remove when removing pblMetaRow
 
   readonly rowType: 'header' | 'footer';
-  readonly element: HTMLElement;
+  readonly element: HTMLElement = undefined!;
   readonly isFooter: boolean;
   readonly gridWidthRow: boolean;
   private _meta: PblMetaRowDefinitions;
@@ -54,7 +54,12 @@ export class PblNgridColumnRowComponent extends PblNgridBaseRowComponent<'header
   }
 
   ngOnInit(): void {
-    super.ngOnInit();
+    // super.ngOnInit();
+    // this.handleVisibility();
+  }
+
+  ngAfterViewInit(): void {
+    super.ngAfterViewInit();
     this.handleVisibility();
   }
 

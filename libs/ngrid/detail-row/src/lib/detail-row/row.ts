@@ -6,6 +6,7 @@ import {
   ViewEncapsulation,
   ViewContainerRef,
   ViewChild,
+  AfterViewInit,
 } from '@angular/core';
 import { ENTER, SPACE } from '@angular/cdk/keycodes';
 import { CdkRow } from '@angular/cdk/table';
@@ -40,7 +41,7 @@ export const PBL_NGRID_ROW_TEMPLATE = '<ng-content select=".pbl-ngrid-row-prefix
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
 })
-export class PblNgridDetailRowComponent extends PblNgridRowComponent implements OnInit, OnDestroy, PblDetailsRowToggleEvent {
+export class PblNgridDetailRowComponent extends PblNgridRowComponent implements OnInit, AfterViewInit, OnDestroy, PblDetailsRowToggleEvent {
 
   get expended(): boolean {
     return this.opened;
@@ -55,14 +56,17 @@ export class PblNgridDetailRowComponent extends PblNgridRowComponent implements 
   // We must explicitly define the inherited properties which have angular annotations
   // Because angular will not detect them when building this library.
   // TODO: When moving up to IVY see if this one get fixed
-  @ViewChild('viewRef', { read: ViewContainerRef, static: true }) _viewRef: ViewContainerRef;
+  @ViewChild('viewRef', { read: ViewContainerRef, static: true }) _viewRef: ViewContainerRef = undefined!;
 
   private opened = false;
   private plugin: import('./detail-row-plugin').PblNgridDetailRowPluginDirective<any>;
   private controller: DetailRowController;
 
   ngOnInit(): void {
-    super.ngOnInit();
+  }
+
+  ngAfterViewInit(): void {
+    super.ngAfterViewInit();
     this.plugin.addDetailRow(this);
     const tradeEvents = this._extApi.pluginCtrl.getPlugin('targetEvents');
 

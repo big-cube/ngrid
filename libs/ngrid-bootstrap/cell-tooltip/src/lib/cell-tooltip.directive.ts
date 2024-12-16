@@ -140,11 +140,7 @@ export class PblNgridCellTooltipDirective<T> implements CellTooltipOptions, OnDe
     if (this._canShow(event)) {
       const params = this.initArgs.slice() as PblNgridCellTooltipDirective<any>['initArgs'];
 
-      this.toolTip = new NgbTooltip(
-        new ElementRef<any>(event.cellTarget),
-        ...params,
-      );
-
+      this.toolTip = new NgbTooltip();//Removed new ElementRef<any>(event.cellTarget), ...params, from new NgbTooltip()
       this.toolTip.container = 'body';
       const message = this.message || (this.lastConfig && this.lastConfig.message) || DEFAULT_OPTIONS.message;
       this.toolTip.ngbTooltip = message(event);

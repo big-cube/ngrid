@@ -1,5 +1,5 @@
 // tslint:disable:no-output-rename
-import { Directive, OnInit } from '@angular/core';
+import { AfterViewInit, Directive, OnInit } from '@angular/core';
 import { DragDrop, CDK_DROP_LIST, CDK_DROP_LIST_GROUP } from '@angular/cdk/drag-drop';
 
 import { PblColumn } from '@pebula/ngrid';
@@ -22,7 +22,7 @@ let _uniqueIdCounter = 0;
     { provide: CDK_DROP_LIST, useExisting: PblNgridAggregationContainerDirective },
   ],
 })
-export class PblNgridAggregationContainerDirective<T = any> extends CdkLazyDropList<T> implements OnInit {
+export class PblNgridAggregationContainerDirective<T = any> extends CdkLazyDropList<T> implements OnInit, AfterViewInit {
   id = `pbl-ngrid-column-aggregation-container-${_uniqueIdCounter++}`;
   orientation: 'horizontal' | 'vertical' = 'horizontal';
 
@@ -31,7 +31,37 @@ export class PblNgridAggregationContainerDirective<T = any> extends CdkLazyDropL
   columnContainer: PblNgridColumnReorderPluginDirective;
 
   ngOnInit(): void {
-    super.ngOnInit();
+    // super.ngOnInit();
+    // this.pblDropListRef.dropped
+    //   .subscribe( event => {
+    //     const item = event.item as PblDragRef<PblNgridColumnDragDirective<any>>;
+    //     this.pending = undefined;
+    //     this.grid.columnApi.addGroupBy(item.data.column);
+    //   });
+
+    // this.pblDropListRef.entered
+    //   .subscribe( event => {
+    //     const item = event.item as PblDragRef<PblNgridColumnDragDirective<any>>;
+    //     this.pending = item.data.column;
+    //     item.getPlaceholderElement().style.display = 'none';
+    //     for (const c of item.data.getCells()) {
+    //       c.style.display = 'none';
+    //     }
+    //   });
+
+    // this.pblDropListRef.exited
+    //   .subscribe( event => {
+    //     const item = event.item as PblDragRef<PblNgridColumnDragDirective<any>>;
+    //     this.pending = undefined;
+    //     item.getPlaceholderElement().style.display = '';
+    //     for (const c of item.data.getCells()) {
+    //       c.style.display = '';
+    //     }
+    //   });
+  }
+
+  ngAfterViewInit(): void {
+    super.ngAfterViewInit();
     this.pblDropListRef.dropped
       .subscribe( event => {
         const item = event.item as PblDragRef<PblNgridColumnDragDirective<any>>;

@@ -93,7 +93,7 @@ export class PblNgridDragResizeComponent implements AfterViewInit, OnDestroy {
       pointerDirectionChangeThreshold: _config && _config.pointerDirectionChangeThreshold != null ? _config.pointerDirectionChangeThreshold : 5,
       zIndex: _config?.zIndex
     };
-    _dragDropRegistry.registerDragItem(this);
+    _dragDropRegistry.registerDragItem(this as any);
   }
 
   ngAfterViewInit(): void {
@@ -117,7 +117,7 @@ export class PblNgridDragResizeComponent implements AfterViewInit, OnDestroy {
       this._rootElement.removeEventListener('touchstart', this._pointerDown, passiveEventListenerOptions);
     }
     this._rootElementInitSubscription.unsubscribe();
-    this._dragDropRegistry.removeDragItem(this);
+    this._dragDropRegistry.removeDragItem(this as any);
     this._removeSubscriptions();
   }
 
@@ -155,7 +155,7 @@ export class PblNgridDragResizeComponent implements AfterViewInit, OnDestroy {
     this._scrollPosition = this._viewportRuler.getViewportScrollPosition();
 
     this._pickupPositionOnPage = this._getPointerPositionOnPage(event);
-    this._dragDropRegistry.startDragging(this, event);
+    this._dragDropRegistry.startDragging(this as any, event);
   }
 
   /** Handler that is invoked when the user moves their pointer after they've initiated a drag. */
@@ -214,7 +214,7 @@ export class PblNgridDragResizeComponent implements AfterViewInit, OnDestroy {
     }
 
     this._removeSubscriptions();
-    this._dragDropRegistry.stopDragging(this);
+    this._dragDropRegistry.stopDragging(this as any);
 
     if (!this._hasStartedDragging) {
       return;
@@ -246,7 +246,7 @@ export class PblNgridDragResizeComponent implements AfterViewInit, OnDestroy {
   }
 
   isDragging() {
-    return this._dragDropRegistry.isDragging(this);
+    return this._dragDropRegistry.isDragging(this as any);
   }
 
   private _getRootElement(): HTMLElement {

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ComponentRef, ViewChild, ViewContainerRef, ViewEncapsulation, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ComponentRef, ViewChild, ViewContainerRef, ViewEncapsulation, OnDestroy, OnInit, AfterViewInit } from '@angular/core';
 import { CdkRow } from '@angular/cdk/table';
 
 import { StylingDiffer, StylingDifferOptions, unrx } from '@pebula/ngrid/core';
@@ -28,9 +28,9 @@ export const PBL_NGRID_ROW_TEMPLATE = '<ng-content select=".pbl-ngrid-row-prefix
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
 })
-export class PblNgridRowComponent<T = any> extends PblNgridBaseRowComponent<'data', T> implements OnInit, OnDestroy {
+export class PblNgridRowComponent<T = any> extends PblNgridBaseRowComponent<'data', T> implements OnInit, AfterViewInit ,OnDestroy {
 
-  @ViewChild('viewRef', { read: ViewContainerRef, static: true }) _viewRef: ViewContainerRef;
+  @ViewChild('viewRef', { read: ViewContainerRef, static: true }) _viewRef: ViewContainerRef = undefined!;
 
   readonly rowType = 'data' as const;
 
@@ -49,7 +49,11 @@ export class PblNgridRowComponent<T = any> extends PblNgridBaseRowComponent<'dat
   private outOfView = false;
 
   ngOnInit(): void {
-    super.ngOnInit();
+
+  }
+
+  ngAfterViewInit(): void {
+    super.ngAfterViewInit();
     this.updateRow();
     // Doing nothing if IntersectionObserver is enable, otherwise updates the initial state
     this.updateOutOfView();

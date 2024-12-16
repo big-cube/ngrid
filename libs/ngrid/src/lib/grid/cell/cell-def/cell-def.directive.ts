@@ -28,7 +28,7 @@ import { PblNgridBaseCellDef } from './base-cell-def.directive';
   ]
 })
 export class PblNgridCellDefDirective<T, P extends keyof PblColumnTypeDefinitionDataMap = any> extends PblNgridBaseCellDef<PblNgridCellContext<T, P>> {
-  type: P;
+  type: P = undefined!;
   constructor(tRef: TemplateRef<PblNgridCellContext<any, P>>, registry: PblNgridRegistryService) { super(tRef, registry); }
 
   ngOnInit(): void {

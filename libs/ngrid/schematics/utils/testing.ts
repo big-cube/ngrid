@@ -4,12 +4,11 @@ export { getFileContent } from '@schematics/angular/utility/test';
 
 function createWorkspace(runner: SchematicTestRunner): Promise<UnitTestTree> {
   return runner
-      .runExternalSchematicAsync('@schematics/angular', 'workspace', {
+      .runExternalSchematic('@schematics/angular', 'workspace', {
         name: 'workspace',
         version: '10.0.0',
         newProjectRoot: 'projects',
-      })
-      .toPromise();
+      });
 }
 
 /**
@@ -18,10 +17,8 @@ function createWorkspace(runner: SchematicTestRunner): Promise<UnitTestTree> {
 export async function createTestApp(runner: SchematicTestRunner, appOptions = {}): Promise<UnitTestTree> {
   let tree = await createWorkspace(runner);
   tree =
-      await runner.runExternalSchematicAsync('@schematics/angular', 'application', {name: 'app', ...appOptions}, tree)
-          .toPromise();
+      await runner.runExternalSchematic('@schematics/angular', 'application', {name: 'app', ...appOptions}, tree);
 
   return runner
-      .runExternalSchematicAsync('@schematics/angular', 'application', {name: 'second-app', ...appOptions}, tree)
-      .toPromise();
+      .runExternalSchematic('@schematics/angular', 'application', {name: 'second-app', ...appOptions}, tree);
 }

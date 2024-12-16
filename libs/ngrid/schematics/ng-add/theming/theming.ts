@@ -17,7 +17,7 @@ import {
 } from '@angular-devkit/schematics';
 import {
   addBodyClass,
-  defaultTargetBuilders,
+  // defaultTargetBuilders,
   getProjectFromWorkspace,
   getProjectStyleFile,
   getProjectTargetOptions,
@@ -38,13 +38,18 @@ const prebuiltThemePathSegment = '@pebula/ngrid/themes';
 /** Default file name of the custom theme that can be generated. */
 const defaultCustomThemeFilename = 'custom-theme.scss';
 
+const defaultTargetBuilders = {
+  build: '@angular-devkit/build-angular:browser',
+  test: '@angular-devkit/build-angular:karma',
+};
+
 /** Add pre-built styles to the main project style file. */
 export function addThemeToAppStyles(schema: SetupSchema): Rule {
   return (host: Tree, context: SchematicContext) => {
     const themeName = schema.theme || 'light';
     return themeName === 'custom' ?
-      insertCustomTheme(schema, host, context.logger) :
-      insertPrebuiltTheme(schema, themeName, context.logger);
+      insertCustomTheme(schema, host, context.logger as any) :
+      insertPrebuiltTheme(schema, themeName, context.logger as any);
   };
 }
 /**

@@ -1,5 +1,5 @@
 // tslint:disable:no-output-rename
-import { Directive, Input, OnInit } from '@angular/core';
+import { AfterViewInit, Directive, Input, OnInit } from '@angular/core';
 import { BooleanInput, coerceBooleanProperty } from '@angular/cdk/coercion';
 import { DragDrop, CdkDragDrop, CDK_DROP_LIST } from '@angular/cdk/drag-drop';
 
@@ -30,7 +30,7 @@ export const COL_REORDER_PLUGIN_KEY: 'columnReorder' = 'columnReorder';
     { provide: CDK_DROP_LIST, useExisting: PblNgridColumnReorderPluginDirective },
   ],
 })
-export class PblNgridColumnReorderPluginDirective<T = any> extends PblNgridColumnDragContainerDirective<T> implements OnInit {
+export class PblNgridColumnReorderPluginDirective<T = any> extends PblNgridColumnDragContainerDirective<T> implements OnInit, AfterViewInit {
 
   @Input() get columnReorder(): boolean { return this._columnReorder; };
   set columnReorder(value: boolean) {
@@ -53,7 +53,11 @@ export class PblNgridColumnReorderPluginDirective<T = any> extends PblNgridColum
   }
 
   ngOnInit(): void {
-    super.ngOnInit();
+
+  }
+
+  ngAfterViewInit(): void {
+    super.ngAfterViewInit();
     this.dropped.subscribe( e => this._pblReset() );
     this.pblDropListRef.beforeExit.subscribe( e => this._pblReset() );
   }

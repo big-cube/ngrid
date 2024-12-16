@@ -47,7 +47,7 @@ export class PblNgridMetaRowComponent extends PblNgridBaseRowComponent<'meta-hea
   set meta(value: PblMetaRowDefinitions) { this._meta = value; } // TODO: remove when removing pblMetaRow
 
   readonly rowType: 'meta-header' | 'meta-footer';
-  readonly element: HTMLElement;
+  readonly element: HTMLElement = undefined!;
   readonly isFooter: boolean;
   readonly gridWidthRow: boolean = false;
   private _meta: PblMetaRowDefinitions;
@@ -55,7 +55,7 @@ export class PblNgridMetaRowComponent extends PblNgridBaseRowComponent<'meta-hea
 
   constructor(@Inject(PBL_NGRID_COMPONENT) @Optional() grid: _PblNgridComponent,
               cdRef: ChangeDetectorRef,
-               el: ElementRef<HTMLElement>,
+              el: ElementRef<HTMLElement>,
               private readonly metaRows: PblNgridMetaRowService,
               @Attribute('footer') isFooter: any) {
     super(grid, cdRef, el);

@@ -6,7 +6,8 @@ import {
   OnInit,
   Inject,
   SkipSelf,
-  ChangeDetectorRef
+  ChangeDetectorRef,
+  AfterViewInit
 } from '@angular/core';
 import { Direction, Directionality } from '@angular/cdk/bidi';
 import { ScrollDispatcher } from '@angular/cdk/scrolling';
@@ -39,7 +40,7 @@ import { PblDragDrop } from './drag-drop';
     '[class.cdk-drop-list-receiving]': '_dropListRef.isReceiving()',
   }
 })
-export class CdkLazyDropList<T = any, DRef = any> extends CdkDropList<T> implements OnInit {
+export class CdkLazyDropList<T = any, DRef = any> extends CdkDropList<T> implements OnInit, AfterViewInit {
 
   get pblDropListRef(): PblDropListRef<DRef> { return this._dropListRef as any; }
 
@@ -90,6 +91,10 @@ export class CdkLazyDropList<T = any, DRef = any> extends CdkDropList<T> impleme
   }
 
   ngOnInit(): void {
+
+  }
+
+  ngAfterViewInit(): void {
     this._dropListRef.beforeStarted.subscribe( () => this.beforeStarted() );
   }
 
