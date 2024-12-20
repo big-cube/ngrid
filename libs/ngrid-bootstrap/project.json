@@ -1,17 +1,14 @@
 {
   "name": "ngrid-bootstrap",
-  "tags": [
-    "name:bootstrap",
-    "type:lib",
-    "parent:ngrid"
-  ],
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "tags": ["name:bootstrap", "type:lib", "parent:ngrid"],
   "sourceRoot": "libs/ngrid-bootstrap/src",
   "projectType": "library",
   "prefix": "pbl",
   "targets": {
     "build": {
       "executor": "ng-cli-packagr-tasks:build",
-      "outputs": ["dist/@pebula/ngrid-bootstrap"],
+      "outputs": ["{workspaceRoot}/dist/@pebula/ngrid-bootstrap"],
       "options": {
         "tsConfig": "libs/ngrid-bootstrap/tsconfig.lib.json",
         "project": "libs/ngrid-bootstrap/ng-package.json",
@@ -65,8 +62,8 @@
       }
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/ngrid-bootstrap"],
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/ngrid-bootstrap"],
       "options": {
         "jestConfig": "libs/ngrid-bootstrap/jest.config.ts",
         "passWithNoTests": true

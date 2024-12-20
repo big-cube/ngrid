@@ -1,6 +1,6 @@
 {
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "name": "ngrid-dev-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "tags": [],
   "projectType": "application",
   "sourceRoot": "apps/ngrid-dev-app/src",
@@ -83,7 +83,7 @@
     },
     "test": {
       "executor": "@angular-devkit/build-angular:karma",
-      "outputs": ["coverage/apps/ngrid-dev-app"],
+      "outputs": ["{workspaceRoot}/coverage/apps/ngrid-dev-app"],
       "options": {
         "main": "apps/ngrid-dev-app/src/test.ts",
         "tsConfig": "apps/ngrid-dev-app/tsconfig.spec.json",

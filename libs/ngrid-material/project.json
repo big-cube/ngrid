@@ -1,17 +1,14 @@
 {
   "name": "ngrid-material",
-  "tags": [
-    "name:material",
-    "type:lib",
-    "parent:ngrid"
-  ],
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "tags": ["name:material", "type:lib", "parent:ngrid"],
   "sourceRoot": "libs/ngrid-material/src",
   "projectType": "library",
   "prefix": "pbl",
   "targets": {
     "build": {
       "executor": "ng-cli-packagr-tasks:build",
-      "outputs": ["dist/@pebula/ngrid-material"],
+      "outputs": ["{workspaceRoot}/dist/@pebula/ngrid-material"],
       "options": {
         "tsConfig": "libs/ngrid-material/tsconfig.lib.json",
         "project": "libs/ngrid-material/ng-package.json",
@@ -65,8 +62,8 @@
       }
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/ngrid-material"],
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/ngrid-material"],
       "options": {
         "jestConfig": "libs/ngrid-material/jest.config.ts",
         "passWithNoTests": true
