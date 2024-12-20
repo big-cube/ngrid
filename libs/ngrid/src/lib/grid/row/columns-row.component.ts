@@ -36,7 +36,7 @@ export class PblNgridColumnRowComponent extends PblNgridBaseRowComponent<'header
   set meta(value: PblMetaRowDefinitions) { this._meta = value; } // TODO: remove when removing pblMetaRow
 
   readonly rowType: 'header' | 'footer';
-  readonly element: HTMLElement;
+  readonly element: HTMLElement = undefined!;
   readonly isFooter: boolean;
   readonly gridWidthRow: boolean;
   private _meta: PblMetaRowDefinitions;

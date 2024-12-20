@@ -55,7 +55,7 @@ export class PblNgridDetailRowComponent extends PblNgridRowComponent implements 
   // We must explicitly define the inherited properties which have angular annotations
   // Because angular will not detect them when building this library.
   // TODO: When moving up to IVY see if this one get fixed
-  @ViewChild('viewRef', { read: ViewContainerRef, static: true }) _viewRef: ViewContainerRef;
+  @ViewChild('viewRef', { read: ViewContainerRef, static: true }) _viewRef: ViewContainerRef = undefined!;
 
   private opened = false;
   private plugin: import('./detail-row-plugin').PblNgridDetailRowPluginDirective<any>;

@@ -37,7 +37,7 @@ export class ColumnApi<T> {
         .pipe(
           ON_RESIZE_ROW,
           // We might get a null sizeInfo when a new column is added - see syncColumnGroupsSize()
-          map( e => this.grid.columnApi.visibleColumns.reduce( (p, c) => p + c.sizeInfo?.width ?? 0, 0 ) ),
+          map( e => this.grid.columnApi.visibleColumns.reduce( (p, c) => p + c.sizeInfo?.width, 0 ) ),
         );
     }
     return this._totalColumnWidthChange;
