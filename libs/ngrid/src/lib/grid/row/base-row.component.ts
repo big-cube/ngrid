@@ -29,7 +29,7 @@ export abstract class PblNgridBaseRowComponent<TRowType extends GridRowType, T =
 
   @ViewChild('viewRef', { read: ViewContainerRef, static: true }) _viewRef: ViewContainerRef;
 
-  readonly element: HTMLElement;
+  element: HTMLElement;
 
   get height() {
     return this.element.getBoundingClientRect().height;
@@ -56,15 +56,15 @@ export abstract class PblNgridBaseRowComponent<TRowType extends GridRowType, T =
 
   constructor(@Inject(PBL_NGRID_COMPONENT) @Optional() grid: _PblNgridComponent<T>,
               readonly cdRef: ChangeDetectorRef,
-              elementRef: ElementRef<HTMLElement>) {
-    this.element = elementRef.nativeElement;
+              private readonly elementRef: ElementRef<HTMLElement>) {
     if (grid) {
       this.grid = grid;
     }
-    this.onCtor();
   }
 
   ngOnInit() {
+    this.onCtor();
+    this.element = this.elementRef.nativeElement;
     if (!this.grid) {
       if (typeof ngDevMode === 'undefined' || ngDevMode) {
         throw new Error(`When a grid row is used outside the scope of a grid, you must provide the grid instance.`);
