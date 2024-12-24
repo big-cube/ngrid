@@ -63,8 +63,8 @@ export abstract class PblNgridBaseRowComponent<TRowType extends GridRowType, T =
   }
 
   ngOnInit() {
-    this.onCtor();
     this.element = this.elementRef.nativeElement;
+    this.onCtor();
     if (!this.grid) {
       if (typeof ngDevMode === 'undefined' || ngDevMode) {
         throw new Error(`When a grid row is used outside the scope of a grid, you must provide the grid instance.`);

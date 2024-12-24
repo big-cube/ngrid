@@ -77,7 +77,10 @@ export class ContextApi<T = any> {
         filter( e => e.kind === 'onDataSource'),
         take(1),
       ).subscribe(() => {
-        this.vcRef = extApi.cdkTable._rowOutlet.viewContainer;
+        Promise.resolve().then(() => {
+          this.vcRef = extApi.cdkTable._rowOutlet.viewContainer;
+          // Safely access the ViewContainerRef
+        });
         this.syncViewAndContext();
         extApi.cdkTable.onRenderRows.subscribe(() => this.syncViewAndContext());
       });

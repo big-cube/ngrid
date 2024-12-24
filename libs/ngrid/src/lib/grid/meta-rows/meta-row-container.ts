@@ -32,7 +32,7 @@ export class PblNgridMetaRowContainerComponent implements OnChanges, OnDestroy {
   constructor(public readonly metaRows: PblNgridMetaRowService, elRef: ElementRef<HTMLElement>) {
     this.element = elRef.nativeElement;
 
-    metaRows.sync.pipe(unrx(this)).subscribe( () => this.syncRowDefinitions() );
+    this.metaRows.sync.pipe(unrx(this)).subscribe( () => this.syncRowDefinitions() );
 
     this.metaRows.extApi.events
       .pipe(ON_RESIZE_ROW, unrx(this))
