@@ -56,22 +56,22 @@ export abstract class PblNgridBaseRowComponent<TRowType extends GridRowType, T =
 
   constructor(@Inject(PBL_NGRID_COMPONENT) @Optional() grid: _PblNgridComponent<T>,
               readonly cdRef: ChangeDetectorRef,
-              private readonly elementRef: ElementRef<HTMLElement>) {
+              public elementRef: ElementRef<HTMLElement>) {
+    this.element = this.elementRef.nativeElement;
     if (grid) {
       this.grid = grid;
     }
+    this.onCtor();
   }
 
   ngOnInit() {
-    this.element = this.elementRef.nativeElement;
-    this.onCtor();
     if (!this.grid) {
       if (typeof ngDevMode === 'undefined' || ngDevMode) {
         throw new Error(`When a grid row is used outside the scope of a grid, you must provide the grid instance.`);
       }
     }
     this.resolveTokens();
-    this.element.setAttribute('data-rowtype', this.rowType);
+    this.elementRef.nativeElement.setAttribute('data-rowtype', this.rowType);
     this._extApi.rowsApi.addRow(this)
   }
 

@@ -19,7 +19,7 @@ class RowToRepeaterBridge {
     currentRow = undefined;
     currentItemArgs = itemArgs;
     const view = createView();
-    if (view.rootNodes[0] !== currentRow.element) {
+    if (view.rootNodes[0] !== currentRow.elementRef.nativeElement) {
       if (typeof ngDevMode === 'undefined' || ngDevMode) {
         throw new Error(`Invalid view state, current row element is not the current rendered element!`);
       }

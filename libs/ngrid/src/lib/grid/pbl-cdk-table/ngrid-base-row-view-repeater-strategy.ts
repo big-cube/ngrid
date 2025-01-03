@@ -53,6 +53,7 @@ export class PblNgridBaseRowViewRepeaterStrategy<T, R extends RenderRow<T>, C ex
                                 currentIndex: number | null) => {
       const itemArgs = itemContextFactory(record, adjustedPreviousIndex, currentIndex);
       itemArgs.context = this.extApi.contextApi._createRowContext(itemArgs.context.$implicit, itemArgs.index) as any;
+      console.log(itemArgs.context.$implicit, itemArgs.index);
       return rowContextBridge.bridgeContext<C>(itemArgs, () => vcRef.createEmbeddedView(itemArgs.templateRef, itemArgs.context, itemArgs.index));
     };
 

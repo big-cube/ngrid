@@ -174,7 +174,7 @@ export class PblNgridRowComponent<T = any> extends PblNgridBaseRowComponent<'dat
   }
 
   protected updateHostClass(): void {
-    const el = this.element;
+    const el = this.elementRef.nativeElement;
 
     // if there is an updater, work with it
     // otherwise, clear previous classes that got applied (assumed a live binding change of the updater function)
@@ -238,8 +238,8 @@ export class PblNgridRowComponent<T = any> extends PblNgridBaseRowComponent<'dat
   }
 
   protected identityUpdated() {
-    this.element.setAttribute('row-id', this.context.dsIndex as any);
-    this.element.setAttribute('row-key', this.context.identity);
+    this.elementRef.nativeElement.setAttribute('row-id', this.context.dsIndex as any);
+    this.elementRef.nativeElement.setAttribute('row-key', this.context.identity);
   }
 
   protected attachColumn(column: PblColumn, cell: ComponentRef<PblNgridCellComponent>) {

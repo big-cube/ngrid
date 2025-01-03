@@ -204,7 +204,7 @@ export class PblRowsApi<T = any> implements RowsApi<T> {
 
   addRow(row: PblNgridBaseRowComponent<GridRowType, T>) {
     this.allRows.add(row);
-    this.allByElement.set(row.element, row);
+    this.allByElement.set(row.elementRef.nativeElement, row);
     const rows = this.rows.get(row.rowType);
     rows.add(row);
 
@@ -214,7 +214,7 @@ export class PblRowsApi<T = any> implements RowsApi<T> {
           this.gridWidthRow = row as unknown as PblNgridColumnRowComponent;
         }
       case 'data': // tslint:disable-line: no-switch-case-fall-through
-        this.intersection.track(row.element);
+        this.intersection.track(row.elementRef.nativeElement);
       case 'footer': // tslint:disable-line: no-switch-case-fall-through
         this.columnRows.add(row as any);
         break;
@@ -229,7 +229,7 @@ export class PblRowsApi<T = any> implements RowsApi<T> {
 
   removeRow(row: PblNgridBaseRowComponent<any, T>) {
     this.allRows.delete(row);
-    this.allByElement.delete(row.element);
+    this.allByElement.delete(row.elementRef.nativeElement);
     const rows = this.rows.get(row.rowType);
     if (rows) {
       rows.delete(row);
@@ -241,7 +241,7 @@ export class PblRowsApi<T = any> implements RowsApi<T> {
           this.gridWidthRow = undefined;
         }
       case 'data': // tslint:disable-line: no-switch-case-fall-through
-        this.intersection.untrack(row.element);
+        this.intersection.untrack(row.elementRef.nativeElement);
       case 'footer': // tslint:disable-line: no-switch-case-fall-through
         this.columnRows.delete(row as any);
         break;
@@ -344,7 +344,7 @@ export class PblRowsApi<T = any> implements RowsApi<T> {
 }
 
 function isOutOfView(row: PblNgridRowComponent, viewPortRect: ClientRect | DOMRect, location?: 'top' | 'bottom'): boolean {
-  const elRect = row.element.getBoundingClientRect();
+  const elRect = row.elementRef.nativeElement.getBoundingClientRect();
 
   let isInsideOfView: boolean;
   switch (location){
