@@ -150,7 +150,7 @@ export class PblRowContext<T> implements PblNgridRowContext<T> {
   private updateRowData() {
     if (this._attachedRow) {
       this._updatePending = false;
-      this.extApi.contextApi._updateRowContext(this, this._attachedRow.rowIndex);
+      this.extApi.contextApi._updateRowContext(this, this._attachedRow.context.index);
       this._attachedRow.updateRow();
     } else {
       this._updatePending = !!this._$implicit;
