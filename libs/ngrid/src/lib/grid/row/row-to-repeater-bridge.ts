@@ -8,14 +8,10 @@ let currentRow: PblNgridRowComponent;
 
 class RowToRepeaterBridge {
 
-  // contextMap: PblRowContext<any>[] = [];
-
   bridgeRow(row: PblNgridRowComponent): Omit<_ViewRepeaterItemInsertArgs<PblRowContext<any>>, 'templateRef'> {
     const itemArgs = currentItemArgs;
     currentItemArgs = undefined;
     currentRow = row;
-    window['rowData' + itemArgs?.index] = itemArgs?.context;
-    // this.contextMap = [...this.contextMap.filter(x=> x.identity < itemArgs.context.identity), itemArgs.context, ...this.contextMap.filter(x=> x.identity > itemArgs.context.identity)];
     return itemArgs;
   }
 
@@ -23,6 +19,9 @@ class RowToRepeaterBridge {
     currentRow = undefined;
     currentItemArgs = itemArgs;
     const view = createView();
+    if(!currentRow.context){
+      currentRow.context = itemArgs.context;
+    }
     if (view.rootNodes[0] !== currentRow.elementRef.nativeElement) {
       if (typeof ngDevMode === 'undefined' || ngDevMode) {
         throw new Error(`Invalid view state, current row element is not the current rendered element!`);
@@ -31,13 +30,6 @@ class RowToRepeaterBridge {
     currentRow = currentItemArgs = undefined;
     return view;
   }
-
-  // getCurrent(){
-  //   const current = this.contextMap[0];
-  //   this.contextMap.shift();
-  //   return current;
-  // }
-
 }
 
 export const rowContextBridge = new RowToRepeaterBridge();

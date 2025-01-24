@@ -39,6 +39,7 @@ export class PblNgridRowComponent<T = any> extends PblNgridBaseRowComponent<'dat
   private observerMode = true;
 
   context: PblRowContext<T>;
+  contextTest: PblRowContext<T>;
 
   protected prevRow: T | undefined;
   protected currRow: T | undefined;
@@ -61,19 +62,6 @@ export class PblNgridRowComponent<T = any> extends PblNgridBaseRowComponent<'dat
   }
 
   updateRow() {
-    const allCurrentRows = Object.entries(window).filter(x=>x[0].startsWith('rowData')).map(x=>x[1]);
-    const currentRowIdentity = (this as any).__ngContext__;
-    const currentRowContext = allCurrentRows.find((x: any)=> x._attachedRow.__ngContext__ === currentRowIdentity)
-    console.log(allCurrentRows);
-    console.log(currentRowIdentity);
-    console.log(currentRowContext);
-    this.context = currentRowContext as any;
-
-    // const test = rowContextBridge.getCurrent();
-    // this.context = test;
-
-    // console.log(test);
-    // this.context = currentRowContext as any;
     if (this.currRow !== this.context.$implicit) {
       this.prevRow = this.currRow;
       this.currRow = this.context.$implicit;
@@ -170,6 +158,7 @@ export class PblNgridRowComponent<T = any> extends PblNgridBaseRowComponent<'dat
     this._extApi = PblNgridPluginController.find(this.grid).extApi as PblNgridInternalExtensionApi<T>;
     this._rowIndex = index;
     this.context = context;
+    this.contextTest = context;
     this.context.attachRow(this);
   }
 

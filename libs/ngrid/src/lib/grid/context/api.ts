@@ -301,7 +301,7 @@ export class ContextApi<T = any> {
   }
 
   rowContext(renderRowIndex: number): PblRowContext<T> | undefined {
-    return this.viewCache.get(renderRowIndex);
+    return this.viewCache.get(renderRowIndex) ?? this.extApi.rowsApi.findDataRowByDsIndex(renderRowIndex).context;
   }
 
   updateState(rowIdentity: any, columnIndex: number, cellState: Partial<CellContextState<T>>): void;
