@@ -16,7 +16,7 @@ import {createTestApp} from '../utils/testing';
       // 'app' is the default application, so we're not passing '--project' option
       const options: Schema = {project: projectName};
       let tree = await createTestApp(runner, appOptions);
-      tree = await runner.runSchematicAsync('ng-add-setup-project', options, tree).toPromise();
+      tree = await runner.runSchematic('ng-add-setup-project', options, tree);
       const workspace = await getWorkspace(tree);
       const project = workspace.projects.get(projectName);
       return {tree, project: project as any};
@@ -34,8 +34,7 @@ import {createTestApp} from '../utils/testing';
 
       expect(tree.read(polyfillFilePath) !.toString()).not.toContain('@angular/localize');
 
-      tree = await runner.runSchematicAsync('ng-add-setup-project', projectName ? {project: projectName} : {}, tree)
-                 .toPromise();
+      tree = await runner.runSchematic('ng-add-setup-project', projectName ? {project: projectName} : {}, tree);
       expect(tree.read(polyfillFilePath) !.toString()).toContain('@angular/localize');
     });
 

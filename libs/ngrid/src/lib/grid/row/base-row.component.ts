@@ -29,7 +29,7 @@ export abstract class PblNgridBaseRowComponent<TRowType extends GridRowType, T =
 
   @ViewChild('viewRef', { read: ViewContainerRef, static: true }) _viewRef: ViewContainerRef;
 
-  readonly element: HTMLElement;
+  element: HTMLElement;
 
   get height() {
     return this.element.getBoundingClientRect().height;
@@ -56,8 +56,8 @@ export abstract class PblNgridBaseRowComponent<TRowType extends GridRowType, T =
 
   constructor(@Inject(PBL_NGRID_COMPONENT) @Optional() grid: _PblNgridComponent<T>,
               readonly cdRef: ChangeDetectorRef,
-              elementRef: ElementRef<HTMLElement>) {
-    this.element = elementRef.nativeElement;
+              public elementRef: ElementRef<HTMLElement>) {
+    this.element = this.elementRef.nativeElement;
     if (grid) {
       this.grid = grid;
     }
@@ -71,7 +71,7 @@ export abstract class PblNgridBaseRowComponent<TRowType extends GridRowType, T =
       }
     }
     this.resolveTokens();
-    this.element.setAttribute('data-rowtype', this.rowType);
+    this.elementRef.nativeElement.setAttribute('data-rowtype', this.rowType);
     this._extApi.rowsApi.addRow(this)
   }
 

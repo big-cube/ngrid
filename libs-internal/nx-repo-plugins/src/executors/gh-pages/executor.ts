@@ -5,7 +5,7 @@ import {
   readTargetOptions,
   runExecutor,
   TargetConfiguration,
-} from '@nrwl/devkit';
+} from '@nx/devkit';
 import { RunCommandsOptions } from 'nx/src/executors/run-commands/run-commands.impl';
 import { CopyFile, CopyPattern } from 'ng-cli-packagr-tasks/dist/tasks/copy-file';
 
@@ -46,7 +46,7 @@ export default async function executor(options: GhPagesExecutorSchema, context: 
     if (step.disabled === true) {
       continue;
     }
-    
+
     logger.info(step.title);
 
     for await (const res of  await step.factory()) {
@@ -59,17 +59,17 @@ export default async function executor(options: GhPagesExecutorSchema, context: 
 async function executeCopyAssets(options: GhPagesExecutorSchema, context: ExecutorContext) {
   return (async function* () {
     const projectMeta = context.workspace.projects[context.projectName];
-  
+
     const copyPatterns = CopyFile.createCopyPatterns(options.assets, context.root, projectMeta.root, projectMeta.sourceRoot);
-    
+
     const copyOptions = { ignore: ['.gitkeep', '**/.DS_Store', '**/Thumbs.db'] };
     const onCopy = (pattern: CopyPattern, from: string, to: string) => {
       logger.info(` - from: ${from}`);
       logger.info(` - to: ${to}`);
     };
-  
+
     console.info('Copying assets:');
-  
+
     try {
       await CopyFile.executeCopyPatterns(copyPatterns, context.root, copyOptions, onCopy);
       yield { success: true };
@@ -91,7 +91,7 @@ function createSsrCompilerTarget(options: GhPagesExecutorSchema, context: Execut
           ],
           parallel: false,
           __unparsed__: [],
-      } 
+      }
   });
 }
 
@@ -106,7 +106,7 @@ function createLocalGhServerTarget(options: GhPagesExecutorSchema, context: Exec
           ],
           parallel: false,
           __unparsed__: [],
-      } 
+      }
   });
 }
 

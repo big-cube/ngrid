@@ -275,12 +275,12 @@ export class PblCdkTableComponent<T> extends CdkTable<T> implements OnDestroy {
 
     const headerRow = this.extApi.rowsApi.findColumnRow('header');
     const footerRow = this.extApi.rowsApi.findColumnRow('footer');
-    const rows = this.extApi.rowsApi.dataRows().map(r => r.element);
+    const rows = this.extApi.rowsApi.dataRows().map(r => r.elementRef.nativeElement);
     if (headerRow) {
-      rows.unshift(headerRow.element);
+      rows.unshift(headerRow.elementRef.nativeElement);
     }
     if (footerRow) {
-      rows.push(footerRow.element);
+      rows.push(footerRow.elementRef.nativeElement);
     }
 
     if (!this.pblStickyColumnStylesNeedReset) {
@@ -290,7 +290,7 @@ export class PblCdkTableComponent<T> extends CdkTable<T> implements OnDestroy {
 
       this.pblStickyColumnStylesNeedReset = this.extApi.columnApi.columns.map(c => c.columnDef).reduce(stickyCheckReducer, false);
     }
-    
+
     // internal reset, coming from Dir change
     // It will probably get added to CDK ask well, remove when addedd
     if (this.pblStickyColumnStylesNeedReset) {

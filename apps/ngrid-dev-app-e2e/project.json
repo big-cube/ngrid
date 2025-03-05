@@ -1,6 +1,6 @@
 {
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "name": "ngrid-dev-app-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "tags": [],
   "sourceRoot": "apps/ngrid-dev-app-e2e/src",
   "projectType": "application",

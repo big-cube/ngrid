@@ -15,7 +15,7 @@ describe(`ng add '@pebula/ngrid'`, () => {
   });
 
   it(`should add missing dependencies to 'package.json'`, async() => {
-    const tree = await runner.runSchematicAsync('ng-add', {}, appTree).toPromise();
+    const tree = await runner.runSchematic('ng-add', {}, appTree);
     const {dependencies} = JSON.parse(getFileContent(tree, '/package.json'));
 
     expect(dependencies['@pebula/ngrid']).toBeDefined();
@@ -25,7 +25,7 @@ describe(`ng add '@pebula/ngrid'`, () => {
   });
 
   it(`should add missing dependencies to 'package.json' with uiPlugin material`, async() => {
-    const tree = await runner.runSchematicAsync('ng-add', { uiPlugin: 'material' }, appTree).toPromise();
+    const tree = await runner.runSchematic('ng-add', { uiPlugin: 'material' }, appTree);
     const {dependencies} = JSON.parse(getFileContent(tree, '/package.json'));
 
     expect(dependencies['@pebula/ngrid']).toBeDefined();
@@ -36,7 +36,7 @@ describe(`ng add '@pebula/ngrid'`, () => {
 
 
   it(`should add missing dependencies to 'package.json' with uiPlugin bootstrap`, async() => {
-    const tree = await runner.runSchematicAsync('ng-add', { uiPlugin: 'bootstrap' }, appTree).toPromise();
+    const tree = await runner.runSchematic('ng-add', { uiPlugin: 'bootstrap' }, appTree);
     const {dependencies} = JSON.parse(getFileContent(tree, '/package.json'));
 
     expect(dependencies['@pebula/ngrid']).toBeDefined();
@@ -48,7 +48,7 @@ describe(`ng add '@pebula/ngrid'`, () => {
   it(`should report when specified 'project' is not found`, async() => {
     let message = '';
     try {
-      await runner.runSchematicAsync('ng-add', {project: 'test'}, appTree).toPromise();
+      await runner.runSchematic('ng-add', {project: 'test'}, appTree);
     } catch (e) {
       message = e.message;
     } finally {

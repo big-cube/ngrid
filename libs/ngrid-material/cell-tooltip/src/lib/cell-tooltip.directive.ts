@@ -6,6 +6,7 @@ import {
   Input,
   NgZone,
   ViewContainerRef,
+  runInInjectionContext,
 } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
@@ -152,7 +153,7 @@ export class PblNgridCellTooltipDirective<T> implements CellTooltipOptions, OnDe
       const params = this.initArgs.slice() as PblNgridCellTooltipDirective<any>['initArgs'];
       params[1] = new ElementRef<any>(event.cellTarget);
 
-      this.toolTip = new MatTooltip(...params);
+      this.toolTip = runInInjectionContext(this.injector, () => new MatTooltip(...params)) ;
 
       const message = this.message || (this.lastConfig && this.lastConfig.message) || DEFAULT_OPTIONS.message;
       this.toolTip.message = message(event);

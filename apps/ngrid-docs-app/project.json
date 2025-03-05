@@ -1,10 +1,7 @@
 {
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "name": "ngrid-docs-app",
-  "tags": [
-    "type:app",
-    "ngrid-docs-app"
-  ],
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "tags": ["type:app", "ngrid-docs-app"],
   "sourceRoot": "apps/ngrid-docs-app/src",
   "projectType": "application",
   "prefix": "pbl",
@@ -24,9 +21,7 @@
           "apps/ngrid-docs-app/src/google1a0455c97ead32c8.html",
           "apps/ngrid-docs-app/src/assets"
         ],
-        "styles": [
-          "apps/ngrid-docs-app/src/styles/main.scss"
-        ],
+        "styles": ["apps/ngrid-docs-app/src/styles/main.scss"],
         "scripts": [],
         "webWorkerTsConfig": "apps/ngrid-docs-app/tsconfig.worker.json",
         "allowedCommonJsDependencies": [
@@ -119,9 +114,7 @@
             "with": "apps/libs/docs-app-lib/lib/services/search/search-adapters/noop.ts"
           }
         ],
-        "styles": [
-          "apps/ngrid-docs-app/src/__test-runners/main-test.scss"
-        ],
+        "styles": ["apps/ngrid-docs-app/src/__test-runners/main-test.scss"],
         "scripts": [],
         "assets": []
       },
@@ -133,19 +126,15 @@
           "browsers": "ChromeHeadlessCI"
         }
       },
-      "outputs": [
-        "coverage/apps/ngrid-docs-app/"
-      ]
+      "outputs": ["{workspaceRoot}/coverage/apps/ngrid-docs-app/"]
     },
     "testJest": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "options": {
         "jestConfig": "apps/ngrid-docs-app/jest.config.ts",
         "passWithNoTests": true
       },
-      "outputs": [
-        "coverage/apps/ngrid-docs-app/"
-      ]
+      "outputs": ["{workspaceRoot}/coverage/apps/ngrid-docs-app/"]
     },
     "server": {
       "executor": "./tools/ngx-build-plus.server:server",

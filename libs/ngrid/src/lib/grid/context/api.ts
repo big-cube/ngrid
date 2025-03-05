@@ -40,7 +40,7 @@ export class ContextApi<T = any> {
   readonly focusChanged: Observable<PblNgridFocusChangedEvent> = this.focusChanged$
     .pipe(
       buffer<PblNgridFocusChangedEvent>(this.focusChanged$.pipe(debounceTime(0, asapScheduler))),
-      map( events => ({ prev: events[0].prev, curr: events[events.length - 1].curr }) )
+      map( events => ({ prev: events[0]?.prev, curr: events[events.length - 1]?.curr }) )
     );
 
   /**
@@ -77,7 +77,10 @@ export class ContextApi<T = any> {
         filter( e => e.kind === 'onDataSource'),
         take(1),
       ).subscribe(() => {
-        this.vcRef = extApi.cdkTable._rowOutlet.viewContainer;
+        Promise.resolve().then(() => {
+          this.vcRef = extApi.cdkTable._rowOutlet.viewContainer;
+          // Safely access the ViewContainerRef
+        });
         this.syncViewAndContext();
         extApi.cdkTable.onRenderRows.subscribe(() => this.syncViewAndContext());
       });
@@ -298,7 +301,7 @@ export class ContextApi<T = any> {
   }
 
   rowContext(renderRowIndex: number): PblRowContext<T> | undefined {
-    return this.viewCache.get(renderRowIndex);
+    return this.viewCache.get(renderRowIndex) ?? this.extApi.rowsApi.findDataRowByDsIndex(renderRowIndex).context;
   }
 
   updateState(rowIdentity: any, columnIndex: number, cellState: Partial<CellContextState<T>>): void;

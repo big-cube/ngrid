@@ -78,7 +78,7 @@ export class PblNgridMetaRowService<T = any> {
     if (rowDef === columnStore.headerColumnDef) {
       if (metaRow.gridWidthRow === true) {
         // This is a dummy row used to measure width and get width resize notifications
-        this.gridWidthRow = { rowDef, el: metaRow.element };
+        this.gridWidthRow = { rowDef, el: (metaRow as any).elementRef.nativeElement };
       } else {
         // This is the main header column row, it doesn't have an index but we will assign as if it's the last
         // so other features will be able to sort by physical location
@@ -124,7 +124,7 @@ export class PblNgridMetaRowService<T = any> {
 
   private addToSection(section: MetaRowSection, metaRow: PblMetaRow, index: number): void {
     const rowDef = metaRow.meta;
-    section[rowDef.type].push( { index, rowDef, el: metaRow.element } );
+    section[rowDef.type].push( { index, rowDef, el: (metaRow as any).elementRef.nativeElement } );
     section.all.push(rowDef);
   }
 }

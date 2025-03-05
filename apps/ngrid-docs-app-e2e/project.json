@@ -1,15 +1,12 @@
 {
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "name": "ngrid-docs-app-e2e",
-  "tags": [
-    "type:e2e-app",
-    "parent:ngrid-docs-app"
-  ],
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "tags": ["type:e2e-app", "parent:ngrid-docs-app"],
   "sourceRoot": "apps/ngrid-docs-app-e2e/src",
   "projectType": "application",
   "targets": {
     "e2e": {
-      "executor": "@nrwl/cypress:cypress",
+      "executor": "@nx/cypress:cypress",
       "options": {
         "cypressConfig": "apps/ngrid-docs-app-e2e/cypress.config.ts",
         "testingType": "e2e"

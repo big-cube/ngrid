@@ -680,7 +680,7 @@ export class PblNgridComponent<T = any> implements AfterContentInit, AfterViewIn
     let rowElement: HTMLElement;
     const row = this.rowsApi.findDataRowByIndex(0);
     if (row) {
-      const height = getComputedStyle(row.element).height;
+      const height = getComputedStyle(row.elementRef.nativeElement).height;
       return parseInt(height, 10);
     } else if (this._vcRefBeforeContent) {
       rowElement = this._vcRefBeforeContent.length > 0

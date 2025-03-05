@@ -1,10 +1,7 @@
 {
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "name": "ngrid",
-  "tags": [
-    "name:ngrid",
-    "type:lib"
-  ],
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "tags": ["name:ngrid", "type:lib"],
   "sourceRoot": "libs/ngrid/src",
   "projectType": "library",
   "prefix": "pbl",
@@ -16,7 +13,7 @@
   "targets": {
     "build": {
       "executor": "ng-cli-packagr-tasks:build",
-      "outputs": ["dist/@pebula/ngrid"],
+      "outputs": ["{workspaceRoot}/dist/@pebula/ngrid"],
       "options": {
         "tsConfig": "libs/ngrid/tsconfig.lib.json",
         "project": "libs/ngrid/ng-package.json",
@@ -85,7 +82,7 @@
     },
     "test": {
       "executor": "@angular-devkit/build-angular:karma",
-      "outputs": ["coverage/libs/ngrid"],
+      "outputs": ["{workspaceRoot}/coverage/libs/ngrid"],
       "options": {
         "main": "libs/ngrid/src/__test-runners/karma-test.ts",
         "tsConfig": "libs/ngrid/tsconfig.spec.json",
@@ -101,10 +98,8 @@
       }
     },
     "testJest": {
-      "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/libs/ngrid"
-      ],
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/ngrid"],
       "options": {
         "jestConfig": "libs/ngrid/jest.config.ts",
         "passWithNoTests": true

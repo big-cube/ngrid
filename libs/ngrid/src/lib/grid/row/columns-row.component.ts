@@ -36,7 +36,7 @@ export class PblNgridColumnRowComponent extends PblNgridBaseRowComponent<'header
   set meta(value: PblMetaRowDefinitions) { this._meta = value; } // TODO: remove when removing pblMetaRow
 
   readonly rowType: 'header' | 'footer';
-  readonly element: HTMLElement;
+  readonly element: HTMLElement = undefined!;
   readonly isFooter: boolean;
   readonly gridWidthRow: boolean;
   private _meta: PblMetaRowDefinitions;
@@ -84,7 +84,7 @@ export class PblNgridColumnRowComponent extends PblNgridBaseRowComponent<'header
 
   protected updateRow(value: PblMetaRowDefinitions) {
     if (value !== this._meta) {
-      applyMetaRowClass(this.metaRows, this, this.element, this._meta, value);
+      applyMetaRowClass(this.metaRows, this, this.elementRef.nativeElement, this._meta, value);
     }
   }
 
@@ -101,17 +101,17 @@ export class PblNgridColumnRowComponent extends PblNgridBaseRowComponent<'header
   }
 
   private handleVisibility() {
-    initColumnOrMetaRow(this.element, this.isFooter);
+    initColumnOrMetaRow(this.elementRef.nativeElement, this.isFooter);
     const key = this.isFooter ? 'showFooter' : 'showHeader';
     if (!this._extApi.grid[key]) {
-      setRowVisibility(this.element, false);
+      setRowVisibility(this.elementRef.nativeElement, false);
     }
 
     this._extApi.propChanged
       .pipe(unrx(this))
       .subscribe( event => {
         if (event.source === this._extApi.grid && event.key === key) {
-          setRowVisibility(this.element, event.prev === false)
+          setRowVisibility(this.elementRef.nativeElement, event.prev === false)
         }
       });
   }
