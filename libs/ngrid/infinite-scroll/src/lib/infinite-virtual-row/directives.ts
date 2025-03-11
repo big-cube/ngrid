@@ -16,6 +16,7 @@ declare module '@pebula/ngrid/core/lib/registry/types' {
 @Directive({
   selector: '[pblNgridInfiniteVirtualRowDef]',
   inputs: ['columns: pblNgridInfiniteVirtualRowDefColumns', 'when: pblNgridInfiniteVirtualRowDefWhen'],
+  standalone: false,
 })
 export class PblNgridInfiniteVirtualRowRefDirective<T = any> extends PblNgridRowDef<T> implements OnInit, OnDestroy {
 

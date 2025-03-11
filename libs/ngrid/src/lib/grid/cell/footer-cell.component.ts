@@ -20,6 +20,7 @@ import { PblNgridBaseCell } from './base-cell';
     class: 'cdk-footer-cell pbl-ngrid-footer-cell',
     role: 'gridcell',
   },
+  standalone: false,
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
 })

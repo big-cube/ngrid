@@ -13,6 +13,7 @@ import { CdkLazyDropList } from './drop-list';
     'class': 'cdk-drag',
     '[class.cdk-drag-dragging]': '_dragRef.isDragging()',
   },
+  standalone: false,
   providers: [
     { provide: DragDrop, useExisting: PblDragDrop },
   ],

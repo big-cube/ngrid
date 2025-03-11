@@ -4,7 +4,7 @@ import { PblNgridRegistryService, PblNgridMultiTemplateRegistry, PblNgridDataHea
 /**
  * Marks the element as the resizer template for cells.
  */
-@Directive({ selector: '[pblNgridCellResizerRef]' })
+@Directive({ selector: '[pblNgridCellResizerRef]', standalone: false, })
 export class PblNgridCellResizerRefDirective extends PblNgridMultiTemplateRegistry<PblNgridDataHeaderExtensionContext, 'dataHeaderExtensions'> implements PblNgridDataHeaderExtensionRef {
   readonly name: 'cellResizer' = 'cellResizer';
   readonly kind: 'dataHeaderExtensions' = 'dataHeaderExtensions';

@@ -26,6 +26,7 @@ import { TOC_AREA_DIRECTIVE_TOKEN } from './toc-area.token';
  */
 @Directive({
   selector: '[pbl-content-toc][id]:not([no-toc])', //, h1[id]:not(.no-toc), h2[id]:not(.no-toc), h3[id]:not(.no-toc)',
+  standalone: false,
 })
 export class TocHeadDirective implements AfterViewInit, OnDestroy {
   link: TocLink = {

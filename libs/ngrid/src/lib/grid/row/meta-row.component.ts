@@ -33,6 +33,7 @@ import { applyMetaRowClass, initColumnOrMetaRow } from './utils';
   providers: [
     { provide: CdkHeaderRow, useExisting: PblNgridMetaRowComponent }
   ],
+  standalone: false,
   changeDetection: ChangeDetectionStrategy.Default,
   encapsulation: ViewEncapsulation.None,
 })

@@ -3,7 +3,7 @@ import { PblNgridSingleRegistryMap } from '@pebula/ngrid/core';
 
 import { PblNgridRegistryService } from '../registry.service';
 
-@Directive()
+@Directive({ standalone: false,})
 export abstract class PblNgridSingleTemplateRegistry<T, TKind extends keyof PblNgridSingleRegistryMap> implements OnInit, OnDestroy {
   abstract readonly kind: TKind;
 

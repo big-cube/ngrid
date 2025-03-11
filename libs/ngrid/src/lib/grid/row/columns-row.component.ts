@@ -23,6 +23,7 @@ import { PblNgridColumnDef } from '../column/directives/column-def';
   providers: [
     { provide: CdkHeaderRow, useExisting: PblNgridColumnRowComponent }
   ],
+  standalone: false,
   changeDetection: ChangeDetectionStrategy.Default,
   encapsulation: ViewEncapsulation.None,
 })

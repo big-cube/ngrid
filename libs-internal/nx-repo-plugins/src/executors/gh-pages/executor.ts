@@ -13,7 +13,7 @@ import { GhPagesExecutorSchema } from './schema';
 
 export default async function executor(options: GhPagesExecutorSchema, context: ExecutorContext) {
   logger.info('Executor ran for GhPages');
-  const buildTarget =  parseTargetString(options.buildTarget);
+  const buildTarget =  parseTargetString(options.buildTarget, context.projectGraph);
   const buildProject = readTargetOptions(buildTarget, context);
 
   const steps: { title: string, disabled?: boolean, factory: () => Promise<AsyncIterableIterator<{ success: boolean; }>> }[] = [
@@ -23,7 +23,7 @@ export default async function executor(options: GhPagesExecutorSchema, context: 
     },
     {
       title: ` - Executing Server Build: ${options.serverTarget}`,
-      factory: () => runExecutor(parseTargetString(options.serverTarget), { bundleDependencies: "all" }, context)
+      factory: () => runExecutor(parseTargetString(options.serverTarget, context.projectGraph), { bundleDependencies: "all" }, context)
     },
     {
       title: `- Executing: SSR pre-cache page rendering`,
@@ -58,7 +58,7 @@ export default async function executor(options: GhPagesExecutorSchema, context: 
 
 async function executeCopyAssets(options: GhPagesExecutorSchema, context: ExecutorContext) {
   return (async function* () {
-    const projectMeta = context.workspace.projects[context.projectName];
+    const projectMeta = context.projectsConfigurations.projects[context.projectName];
 
     const copyPatterns = CopyFile.createCopyPatterns(options.assets, context.root, projectMeta.root, projectMeta.sourceRoot);
 
@@ -113,6 +113,6 @@ function createLocalGhServerTarget(options: GhPagesExecutorSchema, context: Exec
 function adHocTarget<T = any>(targetName: string, context: ExecutorContext, config: TargetConfiguration<T>): string
 {
   var actualName = `${targetName}_${new Date().getTime()}`;
-  context.workspace.projects[context.projectName].targets[actualName] = config;
+  context.projectsConfigurations.projects[context.projectName].targets[actualName] = config;
   return actualName;
 }

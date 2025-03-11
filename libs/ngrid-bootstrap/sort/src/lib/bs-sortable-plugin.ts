@@ -14,7 +14,7 @@ declare module '@pebula/ngrid/lib/ext/types' {
 }
 export const PLUGIN_KEY: 'bsSortable' = 'bsSortable';
 
-@Directive({ selector: 'pbl-ngrid[bsSortable]', exportAs: 'pblBsSortable' })
+@Directive({ selector: 'pbl-ngrid[bsSortable]', exportAs: 'pblBsSortable', standalone: false, })
 export class PblNgridBsSortablePlugin implements OnChanges, OnDestroy {
 
   get bsSortableDisabled() { return this._disabled; }

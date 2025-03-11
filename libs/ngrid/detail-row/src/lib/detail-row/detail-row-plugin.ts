@@ -1,6 +1,6 @@
 import { Directive, EventEmitter, Injector, Input, OnDestroy, Output, ComponentRef, NgZone, ViewContainerRef, Component, createComponent, EnvironmentInjector } from '@angular/core';
 import { BooleanInput, coerceBooleanProperty } from '@angular/cdk/coercion';
-import { PblNgridComponent, PblNgridPluginController } from '@pebula/ngrid';
+import { PblNgridComponent, PblNgridPluginController, PblNgridRowComponent } from '@pebula/ngrid';
 
 import { PblDetailsRowToggleEvent, PLUGIN_KEY } from './tokens';
 import { PblNgridDetailRowComponent } from './row';
@@ -26,7 +26,7 @@ export function toggleDetailRow<T = any>(grid: PblNgridComponent<T>, row: T, for
   }
 }
 
-@Directive({ selector: 'pbl-ngrid[detailRow]', exportAs: 'pblNgridDetailRow' })
+@Directive({ selector: 'pbl-ngrid[detailRow]', exportAs: 'pblNgridDetailRow', standalone: false, })
 export class PblNgridDetailRowPluginDirective<T> implements OnDestroy {
   /**
    * Detail row control (none / all rows / selective rows)
@@ -287,5 +287,6 @@ export class PblNgridDetailRowPluginDirective<T> implements OnDestroy {
  @Component({
   selector: 'pbl-ngrid-default-detail-row-parent',
   template: `<pbl-ngrid-row *pblNgridDetailRowParentRef="let row;" detailRow></pbl-ngrid-row>`,
+  standalone: false,
 })
 export class PblNgridDefaultDetailRowParentComponent { }

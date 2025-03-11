@@ -37,6 +37,7 @@ export interface WidthChangeEvent {
     { provide: CdkColumnDef, useExisting: PblNgridColumnDef },
     { provide: 'MAT_SORT_HEADER_COLUMN_DEF', useExisting: PblNgridColumnDef }
   ],
+  standalone: false,
 })
 export class PblNgridColumnDef<T extends COLUMN = COLUMN> extends CdkColumnDef implements OnDestroy {
   @Input('pblNgridColumnDef') get column(): T { return this._column; };

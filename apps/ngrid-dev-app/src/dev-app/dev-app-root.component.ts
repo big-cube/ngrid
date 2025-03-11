@@ -5,6 +5,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'pbl-dev-app-root',
   template: '<pbl-dev-app-layout><router-outlet></router-outlet></pbl-dev-app-layout>',
   encapsulation: ViewEncapsulation.None,
+  standalone: false,
 })
 export class DevAppRootComponent {
 }

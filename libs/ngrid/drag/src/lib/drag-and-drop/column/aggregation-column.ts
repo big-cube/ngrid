@@ -16,6 +16,7 @@ let _uniqueIdCounter = 0;
     'class': 'cdk-drop-list',
     '[id]': 'id',
   },
+  standalone: false,
   providers: [
     { provide: DragDrop, useExisting: PblDragDrop },
     { provide: CDK_DROP_LIST_GROUP, useValue: undefined },

@@ -50,7 +50,7 @@ export const PLUGIN_KEY: 'transpose' = 'transpose';
  * For example, using pagination with transpose make no sense.
  */
 
-@Directive({ selector: 'pbl-ngrid[transpose]' })
+@Directive({ selector: 'pbl-ngrid[transpose]', standalone: false, })
 export class PblNgridTransposePluginDirective implements OnDestroy {
 
   @Input() get transpose(): boolean { return this.enabled; };

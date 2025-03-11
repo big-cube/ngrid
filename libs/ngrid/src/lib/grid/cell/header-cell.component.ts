@@ -43,6 +43,7 @@ const lastDataHeaderExtensions = new Map<_PblNgridComponent, PblNgridMultiRegist
     class: 'cdk-header-cell pbl-ngrid-header-cell',
     role: 'columnheader',
   },
+  standalone: false,
   exportAs: 'ngridHeaderCell',
   template: `<ng-container #vcRef></ng-container>`,
   changeDetection: ChangeDetectionStrategy.OnPush,

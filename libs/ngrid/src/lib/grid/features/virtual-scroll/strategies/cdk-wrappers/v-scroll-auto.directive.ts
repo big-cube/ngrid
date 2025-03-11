@@ -13,6 +13,7 @@ import { PblNgridAutoSizeVirtualScrollStrategy, PblNgridItemSizeAverager } from 
 @Directive({
   selector: 'pbl-ngrid[vScrollAuto]', // tslint:disable-line: directive-selector
   inputs: [ 'minBufferPx', 'maxBufferPx', 'wheelMode' ], // tslint:disable-line: no-inputs-metadata-property
+  standalone: false,
   providers: [{
     provide: VIRTUAL_SCROLL_STRATEGY,
     useExisting: PblCdkAutoSizeVirtualScrollDirective,

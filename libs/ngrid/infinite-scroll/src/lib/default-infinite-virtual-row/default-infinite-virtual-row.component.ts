@@ -9,6 +9,7 @@ import { PblColumn } from '@pebula/ngrid';
   templateUrl: './default-infinite-virtual-row.component.html',
   styleUrls: ['./default-infinite-virtual-row.component.scss'],
   encapsulation: ViewEncapsulation.None,
+  standalone: false,
 })
 export class PblNgridDefaultInfiniteVirtualRowComponent {
   protected createCell(column: PblColumn) {

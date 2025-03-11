@@ -11,6 +11,7 @@ import { Example } from '@pebula/apps/docs-app-lib';
   styleUrls: ['./drop-container.component.scss'],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 @Example('pbl-drop-container-example', { title: 'Drop Container' })
 export class DropContainerExample {

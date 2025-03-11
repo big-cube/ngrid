@@ -5,7 +5,7 @@ import { EXT_API_TOKEN, PblNgridInternalExtensionApi } from '../../ext/grid-ext-
 import { PblNgridBaseRowComponent } from '../row/base-row.component';
 import { GridRowType } from '../row/types';
 
-@Directive()
+@Directive({ standalone: false,})
 export class PblNgridBaseCell<TRow extends PblNgridBaseRowComponent<GridRowType> = PblNgridBaseRowComponent<GridRowType>> implements OnDestroy {
   el: HTMLElement;
 

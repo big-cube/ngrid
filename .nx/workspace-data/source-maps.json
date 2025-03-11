@@ -1,0 +1,2320 @@
+{
+  "apps/ngrid-docs-app-e2e": {
+    "root": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "$schema": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.type:e2e-app": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.parent:ngrid-docs-app": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies.ngrid-docs-app": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.executor": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.options": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.configurations": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.defaultConfiguration": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.options.cypressConfig": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.options.testingType": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.configurations.development": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.configurations.development.devServerTarget": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.configurations.development-dist": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.configurations.development-dist.devServerTarget": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.configurations.production": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.configurations.production.devServerTarget": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.configurations.production-dist": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.configurations.production-dist.devServerTarget": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.outputs": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options.lintFilePatterns": [
+      "apps/ngrid-docs-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.e2e.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.e2e.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "apps/ngrid-dev-app": {
+    "root": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "prefix": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "generators": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:component": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:component.style": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.index": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.polyfills": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.styles": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.extractLicenses": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.options.scripts": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.vendorChunk": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.options.buildOptimizer": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.options.sourceMap": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.options.optimization": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.options.namedChunks": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.configurations.production": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.fileReplacements": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.optimization": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.configurations.production.outputHashing": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.sourceMap": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.configurations.production.namedChunks": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.configurations.production.extractLicenses": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.configurations.production.vendorChunk": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.configurations.production.buildOptimizer": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.configurations.production.budgets": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.browserTarget": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.docker": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.serve.configurations.docker.host": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.serve.configurations.docker.disableHostCheck": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.serve.configurations.production": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.browserTarget": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.executor": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.options": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.options.browserTarget": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.executor": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.outputs": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.main": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.tsConfig": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.karmaConfig": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.polyfills": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.styles": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.scripts": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.assets": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci.watch": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci.progress": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci.browsers": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.buildOptimizer": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.optimization": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.vendorChunk": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.extractLicenses": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.sourceMap": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.namedChunks": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.browserTarget": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options.lintFilePatterns": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci.karmaConfig": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "apps/ngrid-dev-app-e2e": {
+    "root": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "$schema": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies.ngrid-dev-app": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.executor": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.options": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.configurations": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.options.cypressConfig": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.options.devServerTarget": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.options.testingType": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.configurations.updateSnapshots": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.configurations.updateSnapshots.env": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.configurations.production": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.configurations.production.devServerTarget": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.configurations.production-dist": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.configurations.production-dist.devServerTarget": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.outputs": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options.lintFilePatterns": [
+      "apps/ngrid-dev-app-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.e2e.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.e2e.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "libs/ngrid": {
+    "root": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "prefix": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "generators": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:component": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@schematics/angular:component.style": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.project": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tasks": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.tsConfig": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.project": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.test": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.executor": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.outputs": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.main": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.tsConfig": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.karmaConfig": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci.watch": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci.progress": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci.browsers": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.testJest": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.testJest.executor": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.testJest.options": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.testJest.outputs": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.testJest.options.jestConfig": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.testJest.options.passWithNoTests": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.lint.executor": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.lint.options": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.lint.options.tsConfig": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.lint.options.exclude": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "tags": [
+      "libs/ngrid/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "libs/ngrid/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:angular": [
+      "libs/ngrid/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:grid": [
+      "libs/ngrid/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:table": [
+      "libs/ngrid/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "libs/ngrid/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.description": [
+      "libs/ngrid/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "libs/ngrid/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "libs/ngrid/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageExports": [
+      "libs/ngrid/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "libs/ngrid/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "libs/ngrid/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "libs/ngrid/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "libs/ngrid/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "libs/ngrid/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.name:ngrid": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.type:lib": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.tsConfig": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci.karmaConfig": [
+      "libs/ngrid/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "libs/ngrid-material": {
+    "root": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "prefix": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "generators": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@nrwl/schematics:component": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@nrwl/schematics:component.styleext": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.project": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tasks": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.tsConfig": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.project": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.test": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.executor": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.outputs": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.jestConfig": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.passWithNoTests": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci.jestConfig": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci.watch": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci.progress": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci.browsers": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.lint.executor": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.lint.options": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.lint.options.tsConfig": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.lint.options.exclude": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "tags": [
+      "libs/ngrid-material/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "libs/ngrid-material/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "libs/ngrid-material/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "libs/ngrid-material/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "libs/ngrid-material/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageExports": [
+      "libs/ngrid-material/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "libs/ngrid-material/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "libs/ngrid-material/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "libs/ngrid-material/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "libs/ngrid-material/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "libs/ngrid-material/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.name:material": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.type:lib": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.parent:ngrid": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.tsConfig": [
+      "libs/ngrid-material/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "libs/ngrid-cypress": {
+    "root": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "prefix": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "name": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "generators": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:component": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:component.style": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.project": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tasks": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.tsConfig": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.project": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "tags": [
+      "libs/ngrid-cypress/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "libs/ngrid-cypress/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:ngrid": [
+      "libs/ngrid-cypress/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:cypress": [
+      "libs/ngrid-cypress/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:testing": [
+      "libs/ngrid-cypress/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:e2e": [
+      "libs/ngrid-cypress/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:angular": [
+      "libs/ngrid-cypress/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:grid": [
+      "libs/ngrid-cypress/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:table": [
+      "libs/ngrid-cypress/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "libs/ngrid-cypress/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.description": [
+      "libs/ngrid-cypress/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "libs/ngrid-cypress/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "libs/ngrid-cypress/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "libs/ngrid-cypress/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "libs/ngrid-cypress/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "libs/ngrid-cypress/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "libs/ngrid-cypress/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "libs/ngrid-cypress/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.name:material": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.type:lib": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.parent:ngrid": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.tsConfig": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.outputs": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options.lintFilePatterns": [
+      "libs/ngrid-cypress/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "libs/ngrid-bootstrap": {
+    "root": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "prefix": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "generators": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:component": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:component.style": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.project": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tasks": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.tsConfig": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.project": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.lint": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.lint.executor": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.lint.options": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.lint.options.tsConfig": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.lint.options.exclude": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.test": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.executor": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.outputs": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.jestConfig": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.passWithNoTests": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "libs/ngrid-bootstrap/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "libs/ngrid-bootstrap/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "libs/ngrid-bootstrap/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "libs/ngrid-bootstrap/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "libs/ngrid-bootstrap/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageExports": [
+      "libs/ngrid-bootstrap/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "libs/ngrid-bootstrap/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "libs/ngrid-bootstrap/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "libs/ngrid-bootstrap/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "libs/ngrid-bootstrap/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "libs/ngrid-bootstrap/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.name:bootstrap": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.type:lib": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.parent:ngrid": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.tsConfig": [
+      "libs/ngrid-bootstrap/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "libs-internal/nx-repo-plugins": {
+    "root": [
+      "libs-internal/nx-repo-plugins/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "libs-internal/nx-repo-plugins/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "libs-internal/nx-repo-plugins/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "libs-internal/nx-repo-plugins/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "libs-internal/nx-repo-plugins/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "libs-internal/nx-repo-plugins/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "libs-internal/nx-repo-plugins/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "libs-internal/nx-repo-plugins/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "libs-internal/nx-repo-plugins/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "libs-internal/nx-repo-plugins/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "libs-internal/nx-repo-plugins/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "libs-internal/nx-repo-plugins/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "libs-internal/nx-repo-plugins/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "libs-internal/nx-repo-plugins/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "libs-internal/nx-repo-plugins/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "libs-internal/nx-repo-plugins/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "libs-internal/nx-repo-plugins/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "libs-internal/nx-repo-plugins/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "libs-internal/nx-repo-plugins/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "libs-internal/nx-repo-plugins/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "libs-internal/nx-repo-plugins/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "libs-internal/nx-repo-plugins/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "libs-internal/nx-repo-plugins/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "libs-internal/nx-repo-plugins/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "libs-internal/nx-repo-plugins/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "libs-internal/nx-repo-plugins/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "libs-internal/nx-repo-plugins/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.outputs": [
+      "libs-internal/nx-repo-plugins/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options": [
+      "libs-internal/nx-repo-plugins/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options.lintFilePatterns": [
+      "libs-internal/nx-repo-plugins/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "apps/ngrid-docs-app": {
+    "root": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "prefix": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.type:app": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.ngrid-docs-app": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.plugin": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.index": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.polyfills": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.styles": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.scripts": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.webWorkerTsConfig": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.allowedCommonJsDependencies": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.budgets": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.fileReplacements": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.outputHashing": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.buildOptimizer": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.optimization": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.vendorChunk": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.extractLicenses": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.sourceMap": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.namedChunks": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations._useDist": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations._useDist.tsConfig": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.port": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.plugin": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.browserTarget": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development-dist": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development-dist.browserTarget": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.browserTarget": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production-dist": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production-dist.browserTarget": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options.lintFilePatterns": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.executor": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.outputs": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.main": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.tsConfig": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.karmaConfig": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.polyfills": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.fileReplacements": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.styles": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.scripts": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.assets": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci.watch": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci.progress": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci.karmaConfig": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci.browsers": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.testJest": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.testJest.executor": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.testJest.options": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.testJest.outputs": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.testJest.options.jestConfig": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.testJest.options.passWithNoTests": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.server": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.server.executor": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.server.options": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.server.configurations": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.server.options.plugin": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.server.options.outputPath": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.server.options.main": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.server.options.tsConfig": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.server.configurations.production": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.server.configurations.production.fileReplacements": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.server.configurations.production.sourceMap": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.server.configurations.production.optimization": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.ghPages": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.ghPages.executor": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.ghPages.options": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.ghPages.configurations": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.ghPages.defaultConfiguration": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.ghPages.options.buildTarget": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.ghPages.options.serverTarget": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.ghPages.options.baseHref": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.ghPages.options.ssrWebpackConfig": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.ghPages.options.ssrProccessingScript": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.ghPages.options.assets": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.ghPages.configurations.ci": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.ghPages.configurations.ci.runLocalServer": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.ghPages.configurations.development": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.ghPages.configurations.development.runLocalServer": [
+      "apps/ngrid-docs-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  }
+}

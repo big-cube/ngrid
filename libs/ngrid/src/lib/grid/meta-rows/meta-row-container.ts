@@ -11,6 +11,7 @@ import { PblNgridMetaRowService } from './meta-row.service';
     style: 'flex: 0 0 auto; overflow: hidden;',
     '[style.width.px]': '_innerWidth',
   },
+  standalone: false,
 })
 export class PblNgridMetaRowContainerComponent implements OnChanges, OnDestroy {
 

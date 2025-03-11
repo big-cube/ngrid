@@ -22,7 +22,8 @@ export interface LiveContentChunk {
 @Component({
   selector: 'pbl-content-chunk-view',
   templateUrl: './content-chunk-view.component.html',
-  styleUrls: ['./content-chunk-view.component.scss']
+  styleUrls: ['./content-chunk-view.component.scss'],
+  standalone: false,
 })
 export class ContentChunkViewComponent extends MarkdownDynamicComponentPortal implements OnDestroy {
   contentChunkData: LiveContentChunk;

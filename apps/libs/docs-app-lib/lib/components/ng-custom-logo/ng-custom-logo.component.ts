@@ -7,6 +7,7 @@ import { BooleanInput, coerceBooleanProperty } from '@angular/cdk/coercion';
   styleUrls: [ './ng-custom-logo.component.scss' ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
+  standalone: false,
 })
 export class NgCustomLogoComponent {
   @Input() color: string;

@@ -25,7 +25,8 @@ import { PblNgridBaseCellDef } from './base-cell-def.directive';
   inputs: [
     'name:pblNgridHeaderCellDef',
     'type:pblNgridHeaderCellTypeDef',
-  ]
+  ],
+  standalone: false,
 })
 export class PblNgridHeaderCellDefDirective<T> extends PblNgridBaseCellDef<PblNgridMetaCellContext<T>> {
   constructor(tRef: TemplateRef<PblNgridMetaCellContext<T>>, registry: PblNgridRegistryService) { super(tRef, registry); }

@@ -3,7 +3,7 @@ import { take } from 'rxjs/operators';
 import { Directive, AfterViewInit, ElementRef, Input, NgZone, OnDestroy } from '@angular/core';
 import { PblNgridCellContext } from '../context/index';
 
-@Directive({ selector: '[pblCellEditAutoFocus]' })
+@Directive({ selector: '[pblCellEditAutoFocus]', standalone: false })
 export class PblNgridCellEditAutoFocusDirective implements AfterViewInit, OnDestroy {
 
   // tslint:disable-next-line:no-input-rename

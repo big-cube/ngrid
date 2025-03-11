@@ -41,6 +41,7 @@ const activeEventListenerOptions = normalizePassiveListenerOptions({passive: fal
     'class': 'pbl-ngrid-column-resizer',
     '[style.width.px]': 'grabAreaWidth',
   },
+  standalone: false,
   templateUrl: './column-resize.component.html',
   styleUrls: [ './column-resize.component.scss' ],
   changeDetection: ChangeDetectionStrategy.OnPush,

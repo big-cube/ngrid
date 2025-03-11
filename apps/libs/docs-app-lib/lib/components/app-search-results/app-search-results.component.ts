@@ -22,6 +22,7 @@ import { ViewLayoutObserver } from '../../services/view-layout-observer.service'
       ])
     ])
   ],
+  standalone: false,
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
 })

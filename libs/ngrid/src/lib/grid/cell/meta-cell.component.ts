@@ -32,6 +32,7 @@ const HEADER_GROUP_PLACE_HOLDER_CSS = `pbl-header-group-cell-placeholder`;
   host: {
     role: 'cell',
   },
+  standalone: false,
   exportAs: 'ngridMetaCell',
   template: `<ng-container *ngTemplateOutlet="column?.template; context: cellCtx"></ng-container>`,
   changeDetection: ChangeDetectionStrategy.OnPush,

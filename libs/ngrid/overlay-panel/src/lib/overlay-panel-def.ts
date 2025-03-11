@@ -7,7 +7,7 @@ export interface PblNgridOverlayPanelContext<T = any> {
   ref: PblNgridOverlayPanelRef;
 }
 
-@Directive({ selector: '[pblNgridOverlayPanelDef]' })
+@Directive({ selector: '[pblNgridOverlayPanelDef]', standalone: false, })
 export class PblNgridOverlayPanelDef extends PblNgridMultiTemplateRegistry<PblNgridComponent, 'overlayPanels'> {
 
   readonly kind: 'overlayPanels' = 'overlayPanels';

@@ -115,6 +115,7 @@ export class PblNgridStatePlugin {
 @Directive({
   selector: 'pbl-ngrid[persistState]', // tslint:disable-line:directive-selector
   outputs: ['afterLoadState', 'afterSaveState', 'onError'],
+  standalone: false,
 })
 export class PblNgridStatePluginDirective extends PblNgridStatePlugin implements OnDestroy {
 

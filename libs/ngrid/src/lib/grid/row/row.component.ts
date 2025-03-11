@@ -24,6 +24,7 @@ export const PBL_NGRID_ROW_TEMPLATE = '<ng-content select=".pbl-ngrid-row-prefix
   providers: [
     { provide: CdkRow, useExisting: PblNgridRowComponent }
   ],
+  standalone: false,
   exportAs: 'pblNgridRow',
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,

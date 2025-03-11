@@ -26,7 +26,8 @@ export interface TocLinkTemplateContext {
   templateUrl: './toc.component.html',
   styleUrls: [ './toc.component.scss' ],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  standalone: false,
 })
 export class TocComponent implements OnDestroy {
   rootUrl: string;

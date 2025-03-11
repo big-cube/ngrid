@@ -11,7 +11,7 @@ declare module '@pebula/ngrid/lib/ext/types' {
 }
 export const PLUGIN_KEY: 'matSort' = 'matSort';
 
-@Directive({ selector: 'pbl-ngrid[matSort]', exportAs: 'pblMatSort' })
+@Directive({ selector: 'pbl-ngrid[matSort]', exportAs: 'pblMatSort', standalone: false, })
 export class PblNgridMatSortDirective implements OnDestroy {
   private _removePlugin: (table: PblNgridComponent<any>) => void;
 
@@ -37,7 +37,8 @@ export class PblNgridMatSortDirective implements OnDestroy {
           origin = 'ds';
           this.sort.active = undefined;
           sortable.start = order || 'asc';
-          sortable._handleClick();
+          // sortable._handleClick();
+          this.sort.sort(sortable);
         }
       } else if (this.sort.active) { // clear mode (hit from code, not click).
         const sortable: MatSortHeader = this.sort.sortables.get(this.sort.active) as any;
@@ -49,7 +50,8 @@ export class PblNgridMatSortDirective implements OnDestroy {
             }
           }
           origin = 'ds';
-          sortable._handleClick();
+          // sortable._handleClick();
+          this.sort.sort(sortable);
         }
       }
     }

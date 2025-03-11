@@ -13,6 +13,7 @@ import { PblNgridFixedSizeVirtualScrollStrategy } from './fixed-size';
 @Directive({
   selector: 'pbl-ngrid[vScrollFixed]', // tslint:disable-line: directive-selector
   inputs: [ 'minBufferPx', 'maxBufferPx', 'wheelMode' ], // tslint:disable-line: no-inputs-metadata-property
+  standalone: false,
   providers: [{
     provide: VIRTUAL_SCROLL_STRATEGY,
     useExisting: PblCdkFixedSizedVirtualScrollDirective,

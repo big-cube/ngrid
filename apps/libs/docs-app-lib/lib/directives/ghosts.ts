@@ -3,6 +3,7 @@ import { ExampleViewComponent } from '../components/exapmle-view/example-view.co
 
 @Directive({
   selector: '[pbl-example-view]',
+  standalone: false,
 })
 export class ExampleViewGhostDirective  {
   @Input('pbl-example-view') componentName: string;
@@ -17,6 +18,7 @@ export class ExampleViewGhostDirective  {
 
 @Directive({
   selector: '[pbl-app-content-chunk]',
+  standalone: false,
 })
 export class ContentChunkViewGhostDirective  {
   @Input('pbl-app-content-chunk') componentName: string;

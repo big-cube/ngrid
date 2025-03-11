@@ -15,7 +15,8 @@ import {
   selector: '[ngOnInit], [ngAfterContentInit], [ngAfterViewInit], [ngOnDestroy], [ngAfterViewInitAsync]',
   // tslint:disable-next-line:use-output-property-decorator
   outputs: [ 'onInit:ngOnInit', 'afterContentInit:ngAfterContentInit', 'afterViewInit:ngAfterViewInit', 'onDestroy:ngOnDestroy', 'afterViewInitAsync:ngAfterViewInitAsync' ],
-  exportAs: 'ngHooks'
+  exportAs: 'ngHooks',
+  standalone: false,
 })
 export class NgEventsDirective implements OnInit, OnDestroy, AfterContentInit, AfterViewInit {
   onInit = new EventEmitter<void>();

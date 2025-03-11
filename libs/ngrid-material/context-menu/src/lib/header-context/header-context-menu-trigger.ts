@@ -12,6 +12,7 @@ const DEFAULT_CONFIG: PblNgridOverlayPanelConfig = { hasBackdrop: true, xPos: 'a
     class: 'mat-header-context-menu-trigger',
     '(click)': 'openOverlayPanel()',
   },
+  standalone: false,
   templateUrl: `./header-context-menu-trigger.html`,
   styleUrls: [ `./header-context-menu-trigger.scss` ],
   encapsulation: ViewEncapsulation.None,

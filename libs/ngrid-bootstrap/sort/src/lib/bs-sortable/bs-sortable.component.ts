@@ -10,6 +10,7 @@ import { PblNgridBsSortDirection, PblNgridSortable } from '../types';
   styleUrls: ['./bs-sortable.component.scss'],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
   host: {
     '(click)': '_handleClick()',
   }

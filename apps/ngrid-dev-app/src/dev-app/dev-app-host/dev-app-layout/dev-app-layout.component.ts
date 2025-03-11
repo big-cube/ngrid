@@ -5,6 +5,7 @@ import { ROUTES } from '../../../routes';
   selector: 'pbl-dev-app-layout',
   templateUrl: './dev-app-layout.component.html',
   styleUrls: ['./dev-app-layout.component.scss'],
+  standalone: false,
   encapsulation: ViewEncapsulation.None,
 })
 export class DevAppLayoutComponent {

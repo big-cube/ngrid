@@ -58,7 +58,8 @@ function isPromise<T>(value: any | Promise<T>): value is Promise<T> {
   exportAs: 'pblContentTocArea',
   providers: [
     { provide: TOC_AREA_DIRECTIVE_TOKEN, useExisting: TocAreaDirective }, // We use a token to prevent circular dep warning cause TocAreaDirective is runtime-used here
-  ]
+  ],
+  standalone: false,
 })
 export class TocAreaDirective implements AfterContentInit, OnDestroy {
   @Input()

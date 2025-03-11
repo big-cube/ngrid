@@ -8,6 +8,7 @@ import { PblNgridTargetEventsPlugin } from './target-events-plugin';
 @Directive({
   // tslint:disable-next-line:directive-selector
   selector: 'pbl-ngrid[cellEditClick], pbl-ngrid[cellEditDblClick]',
+  standalone: false,
 })
 export class PblNgridCellEditDirective<T> implements OnDestroy {
   @Input() set cellEditClick(value: boolean) {

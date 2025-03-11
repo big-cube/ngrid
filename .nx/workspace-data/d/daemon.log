@@ -1,0 +1,553 @@
+[NX Daemon Server] - 2025-03-07T15:54:01.301Z - Started listening on: /tmp/52966b703ecf92b003a0/d.sock
+[NX Daemon Server] - 2025-03-07T15:54:01.303Z - [WATCHER]: Subscribed to changes within: /home/cihanemre/work/libraries/ngrid-bigcube/ngrid (native)
+[NX Daemon Server] - 2025-03-07T15:54:01.307Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-03-07T15:54:01.308Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-03-07T15:54:01.311Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-03-07T15:54:01.320Z - Time taken for 'loadSpecifiedNxPlugins' 0.9327570013701916ms
+[NX Daemon Server] - 2025-03-07T15:54:01.320Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-03-07T15:54:01.410Z - Time taken for 'Load Nx Plugin: /home/cihanemre/work/libraries/ngrid-bigcube/ngrid/node_modules/nx/src/adapter/angular-json' 98.34467599913478ms
+[NX Daemon Server] - 2025-03-07T15:54:01.467Z - Time taken for 'Load Nx Plugin: /home/cihanemre/work/libraries/ngrid-bigcube/ngrid/node_modules/nx/src/plugins/package-json' 155.089618999511ms
+[NX Daemon Server] - 2025-03-07T15:54:01.475Z - Time taken for 'Load Nx Plugin: /home/cihanemre/work/libraries/ngrid-bigcube/ngrid/node_modules/nx/src/plugins/js' 163.27694999799132ms
+[NX Daemon Server] - 2025-03-07T15:54:01.488Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-03-07T15:54:01.488Z - [REQUEST]: 
+[NX Daemon Server] - 2025-03-07T15:54:01.488Z - [REQUEST]: 
+[NX Daemon Server] - 2025-03-07T15:54:01.501Z - Time taken for 'loadDefaultNxPlugins' 174.09265600144863ms
+[NX Daemon Server] - 2025-03-07T15:54:01.542Z - Time taken for 'build-project-configs' 32.929473999887705ms
+[NX Daemon Server] - 2025-03-07T15:54:01.857Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-03-07T15:54:01.858Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-03-07T15:54:01.859Z - Time taken for 'total for creating and serializing project graph' 547.0069339983165ms
+[NX Daemon Server] - 2025-03-07T15:54:01.862Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-03-07T15:54:01.862Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 548. Response time: 4.
+[NX Daemon Server] - 2025-03-07T15:54:01.869Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX Daemon Server] - 2025-03-07T15:54:01.869Z - Done responding to the client handleRunPreTasksExecution
+[NX Daemon Server] - 2025-03-07T15:54:01.869Z - Handled PRE_TASKS_EXECUTION. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-03-07T15:54:01.869Z - Time taken for 'preTasksExecution' 0.4289250001311302ms
+[NX Daemon Server] - 2025-03-07T15:54:01.916Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-03-07T15:54:01.917Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-03-07T15:54:01.917Z - Handled HASH_TASKS. Handling time: 17. Response time: 1.
+[NX Daemon Server] - 2025-03-07T15:54:01.924Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX Daemon Server] - 2025-03-07T15:54:01.924Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX Daemon Server] - 2025-03-07T15:54:01.925Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-03-07T15:54:02.181Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-03-07T15:54:02.183Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-03-07T15:54:02.183Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-03-07T15:54:02.184Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-03-07T15:54:02.185Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-03-07T15:54:02.186Z - Time taken for 'total for creating and serializing project graph' 0.2795250006020069ms
+[NX Daemon Server] - 2025-03-07T15:54:02.187Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-03-07T15:54:02.187Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 2.
+[NX Daemon Server] - 2025-03-07T15:54:04.169Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-03-07T15:54:04.179Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-03-07T15:54:04.179Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-03-07T15:54:04.179Z - Handled RECORD_OUTPUTS_HASH. Handling time: 6. Response time: 0.
+[NX Daemon Server] - 2025-03-07T15:54:04.185Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX Daemon Server] - 2025-03-07T15:54:04.185Z - Done responding to the client handleRecordTaskRuns
+[NX Daemon Server] - 2025-03-07T15:54:04.185Z - Handled RECORD_TASK_RUNS. Handling time: 3. Response time: 0.
+[NX Daemon Server] - 2025-03-07T15:54:04.186Z - [REQUEST]: Responding to the client. handleGetFlakyTasks
+[NX Daemon Server] - 2025-03-07T15:54:04.186Z - Done responding to the client handleGetFlakyTasks
+[NX Daemon Server] - 2025-03-07T15:54:04.186Z - Handled GET_FLAKY_TASKS. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-03-07T15:54:04.188Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX Daemon Server] - 2025-03-07T15:54:04.188Z - Done responding to the client handleRunPostTasksExecution
+[NX Daemon Server] - 2025-03-07T15:54:04.188Z - Handled POST_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-03-07T15:54:04.188Z - Time taken for 'postTasksExecution' 0.12760299816727638ms
+[NX Daemon Server] - 2025-03-07T15:54:04.193Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-03-07T15:57:32.315Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-03-07T15:57:32.316Z - [WATCHER]: package-lock.json was modified
+[NX Daemon Server] - 2025-03-07T15:57:32.419Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-03-07T15:57:32.420Z - [REQUEST]: package-lock.json
+[NX Daemon Server] - 2025-03-07T15:57:32.420Z - [REQUEST]: 
+[NX Daemon Server] - 2025-03-07T15:57:32.431Z - Time taken for 'hash changed files from watcher' 1.8268710002303123ms
+[NX Daemon Server] - 2025-03-07T15:57:32.489Z - Time taken for 'build-project-configs' 47.05874000117183ms
+[NX Daemon Server] - 2025-03-07T15:57:32.579Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-03-07T15:57:32.582Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-03-07T15:57:32.585Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-03-07T15:57:32.585Z - Time taken for 'total execution time for createProjectGraph()' 72.8803349994123ms
+[NX Daemon Server] - 2025-03-07T16:04:26.049Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-03-07T16:04:26.051Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-03-07T16:04:26.052Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-03-07T16:04:26.053Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-03-07T16:04:26.054Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-03-07T16:04:26.056Z - Time taken for 'total for creating and serializing project graph' 0.4241640008985996ms
+[NX Daemon Server] - 2025-03-07T16:04:26.057Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-03-07T16:04:26.057Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 3.
+[NX Daemon Server] - 2025-03-07T16:04:26.062Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX Daemon Server] - 2025-03-07T16:04:26.062Z - Done responding to the client handleRunPreTasksExecution
+[NX Daemon Server] - 2025-03-07T16:04:26.062Z - Handled PRE_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-03-07T16:04:26.063Z - Time taken for 'preTasksExecution' 0.1404859982430935ms
+[NX Daemon Server] - 2025-03-07T16:04:26.087Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-03-07T16:04:26.087Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-03-07T16:04:26.087Z - Handled HASH_TASKS. Handling time: 14. Response time: 0.
+[NX Daemon Server] - 2025-03-07T16:04:26.106Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX Daemon Server] - 2025-03-07T16:04:26.106Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX Daemon Server] - 2025-03-07T16:04:26.106Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-03-07T16:04:26.363Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-03-07T16:04:26.364Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-03-07T16:04:26.365Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-03-07T16:04:26.366Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-03-07T16:04:26.366Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-03-07T16:04:26.368Z - Time taken for 'total for creating and serializing project graph' 0.18554500117897987ms
+[NX Daemon Server] - 2025-03-07T16:04:26.368Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-03-07T16:04:26.368Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2025-03-07T16:04:28.358Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-03-07T16:04:28.368Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-03-07T16:04:28.368Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-03-07T16:04:28.368Z - Handled RECORD_OUTPUTS_HASH. Handling time: 5. Response time: 0.
+[NX Daemon Server] - 2025-03-07T16:04:28.374Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX Daemon Server] - 2025-03-07T16:04:28.374Z - Done responding to the client handleRecordTaskRuns
+[NX Daemon Server] - 2025-03-07T16:04:28.374Z - Handled RECORD_TASK_RUNS. Handling time: 4. Response time: 0.
+[NX Daemon Server] - 2025-03-07T16:04:28.374Z - [REQUEST]: Responding to the client. handleGetFlakyTasks
+[NX Daemon Server] - 2025-03-07T16:04:28.375Z - Done responding to the client handleGetFlakyTasks
+[NX Daemon Server] - 2025-03-07T16:04:28.375Z - Handled GET_FLAKY_TASKS. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2025-03-07T16:04:28.377Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX Daemon Server] - 2025-03-07T16:04:28.377Z - Done responding to the client handleRunPostTasksExecution
+[NX Daemon Server] - 2025-03-07T16:04:28.377Z - Handled POST_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-03-07T16:04:28.377Z - Time taken for 'postTasksExecution' 0.29805099964141846ms
+[NX Daemon Server] - 2025-03-07T16:04:28.381Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:27.002Z - Started listening on: /tmp/52966b703ecf92b003a0/d.sock
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:27.003Z - [WATCHER]: Subscribed to changes within: /home/cihanemre/work/libraries/ngrid-bigcube/ngrid (native)
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:27.010Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:27.011Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:27.012Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:27.012Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:27.013Z - Done responding to the client Shutdown initiated
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:27.013Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:27.015Z - [WATCHER]: Stopping the watcher for /home/cihanemre/work/libraries/ngrid-bigcube/ngrid (sources)
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:27.015Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:27.015Z - [WATCHER]: Stopping the watcher for /home/cihanemre/work/libraries/ngrid-bigcube/ngrid (outputs)
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:27.015Z - Server stopped because: "Request to shutdown"
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.164Z - Started listening on: /tmp/52966b703ecf92b003a0/d.sock
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.166Z - [WATCHER]: Subscribed to changes within: /home/cihanemre/work/libraries/ngrid-bigcube/ngrid (native)
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.170Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.171Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.174Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.182Z - Time taken for 'loadSpecifiedNxPlugins' 0.892831000033766ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.183Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.273Z - Time taken for 'Load Nx Plugin: /home/cihanemre/work/libraries/ngrid-bigcube/ngrid/node_modules/nx/src/adapter/angular-json' 98.4977619999554ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.304Z - Time taken for 'Load Nx Plugin: /home/cihanemre/work/libraries/ngrid-bigcube/ngrid/node_modules/nx/src/plugins/package-json' 128.9397090000566ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.322Z - Time taken for 'Load Nx Plugin: /home/cihanemre/work/libraries/ngrid-bigcube/ngrid/node_modules/nx/src/plugins/js' 147.07257299986668ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.334Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.334Z - [REQUEST]: 
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.334Z - [REQUEST]: 
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.351Z - Time taken for 'loadDefaultNxPlugins' 158.20425399998203ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.394Z - Time taken for 'build-project-configs' 32.74547199998051ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.466Z - [SYNC]: collect registered sync generators
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.467Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.469Z - Time taken for 'total for creating and serializing project graph' 293.4036540000234ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.471Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.471Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 294. Response time: 4.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.478Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.478Z - Done responding to the client handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.478Z - Handled PRE_TASKS_EXECUTION. Handling time: 1. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.478Z - Time taken for 'preTasksExecution' 0.785757000092417ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.530Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.531Z - Done responding to the client handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.531Z - Handled HASH_TASKS. Handling time: 11. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.537Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.538Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.538Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 0. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.800Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.802Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.802Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.803Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.803Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.805Z - Time taken for 'total for creating and serializing project graph' 0.19023099984042346ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.806Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:53.806Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:55.801Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:55.813Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:55.813Z - Done responding to the client recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:55.813Z - Handled RECORD_OUTPUTS_HASH. Handling time: 8. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:55.825Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:55.826Z - Done responding to the client handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:55.826Z - Handled RECORD_TASK_RUNS. Handling time: 10. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:55.827Z - [REQUEST]: Responding to the client. handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:55.827Z - Done responding to the client handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:55.827Z - Handled GET_FLAKY_TASKS. Handling time: 1. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:55.828Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:55.828Z - Done responding to the client handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:55.828Z - Handled POST_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:55.828Z - Time taken for 'postTasksExecution' 0.08727699983865023ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:20:55.832Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.455Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.457Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.457Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.459Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.459Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.461Z - Time taken for 'total for creating and serializing project graph' 0.45091000013053417ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.462Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.462Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.468Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.468Z - Done responding to the client handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.468Z - Handled PRE_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.468Z - Time taken for 'preTasksExecution' 0.15490800002589822ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.484Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.484Z - Done responding to the client handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.484Z - Handled HASH_TASKS. Handling time: 5. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.503Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.503Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.503Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.740Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.740Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.741Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.742Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.742Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.744Z - Time taken for 'total for creating and serializing project graph' 0.20328700030222535ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.745Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:53.745Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:55.713Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:55.720Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:55.721Z - Done responding to the client recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:55.721Z - Handled RECORD_OUTPUTS_HASH. Handling time: 5. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:55.734Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:55.735Z - Done responding to the client handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:55.735Z - Handled RECORD_TASK_RUNS. Handling time: 11. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:55.736Z - [REQUEST]: Responding to the client. handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:55.736Z - Done responding to the client handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:55.736Z - Handled GET_FLAKY_TASKS. Handling time: 1. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:55.737Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:55.737Z - Done responding to the client handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:55.737Z - Handled POST_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:55.737Z - Time taken for 'postTasksExecution' 0.09422000031918287ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:24:55.740Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:51.679Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:51.680Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:51.680Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:51.682Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:51.683Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:51.684Z - Time taken for 'total for creating and serializing project graph' 0.24810099974274635ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:51.686Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:51.686Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 3.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:51.692Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:51.692Z - Done responding to the client handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:51.692Z - Handled PRE_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:51.692Z - Time taken for 'preTasksExecution' 0.17575899977236986ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:51.709Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:51.710Z - Done responding to the client handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:51.710Z - Handled HASH_TASKS. Handling time: 5. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:51.728Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:51.728Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:51.729Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 0. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:51.997Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:52.000Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:52.000Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:52.001Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:52.001Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:52.003Z - Time taken for 'total for creating and serializing project graph' 0.2984170001000166ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:52.004Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:52.004Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:54.044Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:54.052Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:54.052Z - Done responding to the client recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:54.052Z - Handled RECORD_OUTPUTS_HASH. Handling time: 4. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:54.059Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:54.059Z - Done responding to the client handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:54.059Z - Handled RECORD_TASK_RUNS. Handling time: 4. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:54.060Z - [REQUEST]: Responding to the client. handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:54.060Z - Done responding to the client handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:54.060Z - Handled GET_FLAKY_TASKS. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:54.062Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:54.062Z - Done responding to the client handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:54.062Z - Handled POST_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:54.062Z - Time taken for 'postTasksExecution' 0.09053599974140525ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:27:54.067Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:26.231Z - [WATCHER]: libs/ngrid/package.json was modified
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:26.231Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:26.333Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:26.333Z - [REQUEST]: libs/ngrid/package.json
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:26.334Z - [REQUEST]: 
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:26.347Z - Time taken for 'hash changed files from watcher' 1.81841199984774ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:26.383Z - Time taken for 'build-project-configs' 29.259596000425518ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:26.439Z - [SYNC]: collect registered sync generators
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:26.440Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:26.440Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:26.440Z - Time taken for 'total execution time for createProjectGraph()' 52.92487999983132ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.123Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.124Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.125Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.126Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.126Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.128Z - Time taken for 'total for creating and serializing project graph' 0.2897540000267327ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.129Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.129Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.136Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.136Z - Done responding to the client handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.136Z - Handled PRE_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.136Z - Time taken for 'preTasksExecution' 0.10577399982139468ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.159Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.160Z - Done responding to the client handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.160Z - Handled HASH_TASKS. Handling time: 12. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.180Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.180Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.180Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.448Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.448Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.448Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.449Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.450Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.451Z - Time taken for 'total for creating and serializing project graph' 0.1905999998562038ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.452Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:30.452Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 2.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:32.436Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:32.445Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:32.446Z - Done responding to the client recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:32.446Z - Handled RECORD_OUTPUTS_HASH. Handling time: 5. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:32.459Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:32.459Z - Done responding to the client handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:32.459Z - Handled RECORD_TASK_RUNS. Handling time: 10. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:32.460Z - [REQUEST]: Responding to the client. handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:32.460Z - Done responding to the client handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:32.460Z - Handled GET_FLAKY_TASKS. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:32.462Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:32.462Z - Done responding to the client handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:32.462Z - Handled POST_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:32.462Z - Time taken for 'postTasksExecution' 0.10198699962347746ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:28:32.466Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.228Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.230Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.231Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.233Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.233Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.235Z - Time taken for 'total for creating and serializing project graph' 0.5386900003068149ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.237Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.237Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 4.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.242Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.242Z - Done responding to the client handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.242Z - Handled PRE_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.242Z - Time taken for 'preTasksExecution' 0.12452500034123659ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.258Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.258Z - Done responding to the client handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.258Z - Handled HASH_TASKS. Handling time: 5. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.266Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.266Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.266Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.521Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.523Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.524Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.525Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.525Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.527Z - Time taken for 'total for creating and serializing project graph' 0.20315300021320581ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.527Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:26.527Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:28.529Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:28.539Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:28.539Z - Done responding to the client recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:28.539Z - Handled RECORD_OUTPUTS_HASH. Handling time: 6. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:28.545Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:28.545Z - Done responding to the client handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:28.545Z - Handled RECORD_TASK_RUNS. Handling time: 3. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:28.546Z - [REQUEST]: Responding to the client. handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:28.546Z - Done responding to the client handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:28.546Z - Handled GET_FLAKY_TASKS. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:28.547Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:28.547Z - Done responding to the client handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:28.547Z - Handled POST_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:28.547Z - Time taken for 'postTasksExecution' 0.078834000043571ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:48:28.551Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.307Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.308Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.310Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.311Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.311Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.313Z - Time taken for 'total for creating and serializing project graph' 0.44086500024423003ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.314Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.314Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.320Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.320Z - Done responding to the client handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.320Z - Handled PRE_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.321Z - Time taken for 'preTasksExecution' 0.08675399981439114ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.338Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.338Z - Done responding to the client handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.338Z - Handled HASH_TASKS. Handling time: 6. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.348Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.348Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.348Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.593Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.593Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.593Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.594Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.595Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.597Z - Time taken for 'total for creating and serializing project graph' 0.21423499984666705ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.598Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:01.598Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 3.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:03.660Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:03.667Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:03.667Z - Done responding to the client recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:03.667Z - Handled RECORD_OUTPUTS_HASH. Handling time: 4. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:03.672Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:03.672Z - Done responding to the client handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:03.673Z - Handled RECORD_TASK_RUNS. Handling time: 2. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:03.673Z - [REQUEST]: Responding to the client. handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:03.673Z - Done responding to the client handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:03.673Z - Handled GET_FLAKY_TASKS. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:03.675Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:03.675Z - Done responding to the client handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:03.675Z - Handled POST_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:03.675Z - Time taken for 'postTasksExecution' 0.09544399986043572ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:49:03.679Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:40.941Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:40.942Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:40.943Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:40.944Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:40.945Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:40.946Z - Time taken for 'total for creating and serializing project graph' 0.2775099999271333ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:40.947Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:40.947Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 2.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:40.952Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:40.953Z - Done responding to the client handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:40.953Z - Handled PRE_TASKS_EXECUTION. Handling time: 0. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:40.953Z - Time taken for 'preTasksExecution' 0.07874100003391504ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:40.967Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:40.967Z - Done responding to the client handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:40.967Z - Handled HASH_TASKS. Handling time: 5. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:40.985Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:40.985Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:40.985Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:41.244Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:41.244Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:41.245Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:41.246Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:41.246Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:41.247Z - Time taken for 'total for creating and serializing project graph' 0.1944120000116527ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:41.248Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:41.248Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:43.281Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:43.289Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:43.290Z - Done responding to the client recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:43.290Z - Handled RECORD_OUTPUTS_HASH. Handling time: 3. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:43.295Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:43.295Z - Done responding to the client handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:43.295Z - Handled RECORD_TASK_RUNS. Handling time: 3. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:43.296Z - [REQUEST]: Responding to the client. handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:43.296Z - Done responding to the client handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:43.296Z - Handled GET_FLAKY_TASKS. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:43.298Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:43.298Z - Done responding to the client handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:43.298Z - Handled POST_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:43.298Z - Time taken for 'postTasksExecution' 0.12873499980196357ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:51:43.301Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.059Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.060Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.060Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.062Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.062Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.064Z - Time taken for 'total for creating and serializing project graph' 0.2520809997804463ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.065Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.066Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 4.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.071Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.071Z - Done responding to the client handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.071Z - Handled PRE_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.071Z - Time taken for 'preTasksExecution' 0.08606100035831332ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.086Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.086Z - Done responding to the client handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.086Z - Handled HASH_TASKS. Handling time: 5. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.104Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.104Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.104Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.360Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.361Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.361Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.362Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.362Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.364Z - Time taken for 'total for creating and serializing project graph' 0.16845700005069375ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.365Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:46.365Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:48.356Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:48.365Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:48.365Z - Done responding to the client recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:48.365Z - Handled RECORD_OUTPUTS_HASH. Handling time: 4. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:48.374Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:48.374Z - Done responding to the client handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:48.374Z - Handled RECORD_TASK_RUNS. Handling time: 6. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:48.375Z - [REQUEST]: Responding to the client. handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:48.375Z - Done responding to the client handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:48.375Z - Handled GET_FLAKY_TASKS. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:48.377Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:48.377Z - Done responding to the client handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:48.377Z - Handled POST_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:48.377Z - Time taken for 'postTasksExecution' 0.07047299994155765ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T07:53:48.381Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.507Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.507Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.508Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.509Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.510Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.512Z - Time taken for 'total for creating and serializing project graph' 0.5582569995895028ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.513Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.513Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 3.
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.520Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.520Z - Done responding to the client handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.520Z - Handled PRE_TASKS_EXECUTION. Handling time: 1. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.520Z - Time taken for 'preTasksExecution' 0.24426500033587217ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.541Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.541Z - Done responding to the client handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.541Z - Handled HASH_TASKS. Handling time: 7. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.551Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.551Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.551Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 1. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.856Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.856Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.856Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.857Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.857Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.859Z - Time taken for 'total for creating and serializing project graph' 0.18834299966692924ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.861Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:14.861Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 4.
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:17.336Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:17.346Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:17.347Z - Done responding to the client recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:17.347Z - Handled RECORD_OUTPUTS_HASH. Handling time: 5. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:17.351Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:17.351Z - Done responding to the client handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:17.351Z - Handled RECORD_TASK_RUNS. Handling time: 2. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:17.352Z - [REQUEST]: Responding to the client. handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:17.353Z - Done responding to the client handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:17.353Z - Handled GET_FLAKY_TASKS. Handling time: 0. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:17.354Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:17.355Z - Done responding to the client handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:17.355Z - Handled POST_TASKS_EXECUTION. Handling time: 0. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:17.355Z - Time taken for 'postTasksExecution' 0.24964500032365322ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:17.359Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:30.962Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:30.963Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:30.963Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:30.964Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:30.964Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:30.965Z - Time taken for 'total for creating and serializing project graph' 0.20051100011914968ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:30.967Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:30.967Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:30.973Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:30.973Z - Done responding to the client handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:30.973Z - Handled PRE_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:30.973Z - Time taken for 'preTasksExecution' 0.08239200059324503ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:30.989Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:30.989Z - Done responding to the client handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:30.989Z - Handled HASH_TASKS. Handling time: 6. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:30.999Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:30.999Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:30.999Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 1. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:31.304Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:31.306Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:31.307Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:31.309Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:31.309Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:31.311Z - Time taken for 'total for creating and serializing project graph' 0.40525500010699034ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:31.312Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:31.312Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:33.684Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:33.698Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:33.698Z - Done responding to the client recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:33.698Z - Handled RECORD_OUTPUTS_HASH. Handling time: 9. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:33.703Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:33.703Z - Done responding to the client handleRecordTaskRuns
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:33.703Z - Handled RECORD_TASK_RUNS. Handling time: 2. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:33.704Z - [REQUEST]: Responding to the client. handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:33.704Z - Done responding to the client handleGetFlakyTasks
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:33.704Z - Handled GET_FLAKY_TASKS. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:33.706Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:33.706Z - Done responding to the client handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:33.706Z - Handled POST_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:33.706Z - Time taken for 'postTasksExecution' 0.08830200042575598ms
+[NX v20.5.0 Daemon Server] - 2025-03-10T08:30:33.711Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-10T11:30:33.712Z - [WATCHER]: Stopping the watcher for /home/cihanemre/work/libraries/ngrid-bigcube/ngrid (sources)
+[NX v20.5.0 Daemon Server] - 2025-03-10T11:30:33.713Z - [WATCHER]: Stopping the watcher for /home/cihanemre/work/libraries/ngrid-bigcube/ngrid (outputs)
+[NX v20.5.0 Daemon Server] - 2025-03-10T11:30:33.730Z - Server stopped because: "10800000ms of inactivity"

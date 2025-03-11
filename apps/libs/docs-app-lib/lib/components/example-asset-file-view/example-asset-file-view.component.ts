@@ -8,6 +8,7 @@ import type { ExampleFileAsset } from '@pebula-internal/webpack-markdown-code-ex
   },
   templateUrl: './example-asset-file-view.component.html',
   styleUrls: [ './example-asset-file-view.component.scss' ],
+  standalone: false,
 })
 export class ExampleAssetFileViewComponent {
   private textarea: HTMLTextAreaElement;

@@ -16,7 +16,7 @@ describe('ngrid grid schematic', () => {
 
   it('should create table files and add them to module', async () => {
     const app = await createTestApp(runner);
-    const tree = await runner.runSchematicAsync('grid', baseOptions, app).toPromise();
+    const tree = await runner.runSchematic('grid', baseOptions, app);
     const files = tree.files;
 
     expect(files).toContain('/projects/app/src/app/foo/foo.component.css');
@@ -36,7 +36,7 @@ describe('ngrid grid schematic', () => {
 
   it('should add grid imports to module', async () => {
     const app = await createTestApp(runner);
-    const tree = await runner.runSchematicAsync('grid', baseOptions, app).toPromise();
+    const tree = await runner.runSchematic('grid', baseOptions, app);
     const moduleContent = getFileContent(tree, '/projects/app/src/app/app.module.ts');
 
     expect(moduleContent).toContain('PblNgridModule');
@@ -46,15 +46,14 @@ describe('ngrid grid schematic', () => {
 
   describe('style option', () => {
     it('should respect the option value', async () => {
-      const tree = await runner.runSchematicAsync('grid', {style: 'scss', ...baseOptions}, await createTestApp(runner)).toPromise();
+      const tree = await runner.runSchematic('grid', {style: 'scss', ...baseOptions}, await createTestApp(runner));
       expect(tree.files).toContain('/projects/app/src/app/foo/foo.component.scss');
     });
 
     it('should fall back to the @schematics/angular:component option value', async () => {
       const tree =
           await runner
-              .runSchematicAsync('grid', baseOptions, await createTestApp(runner, {style: 'less'}))
-              .toPromise();
+              .runSchematic('grid', baseOptions, await createTestApp(runner, {style: 'less'}));
 
       expect(tree.files).toContain('/projects/app/src/app/foo/foo.component.less');
     });
@@ -64,18 +63,16 @@ describe('ngrid grid schematic', () => {
     it('should respect the option value', async () => {
       const tree =
           await runner
-              .runSchematicAsync(
-                  'grid', {inlineStyle: true, ...baseOptions}, await createTestApp(runner))
-              .toPromise();
+              .runSchematic(
+                  'grid', {inlineStyle: true, ...baseOptions}, await createTestApp(runner));
 
       expect(tree.files).not.toContain('/projects/app/src/app/foo/foo.component.css');
     });
 
     it('should fall back to the @schematics/angular:component option value', async () => {
       const tree = await runner
-                       .runSchematicAsync(
-                           'grid', baseOptions, await createTestApp(runner, {inlineStyle: true}))
-                       .toPromise();
+                       .runSchematic(
+                           'grid', baseOptions, await createTestApp(runner, {inlineStyle: true}));
 
       expect(tree.files).not.toContain('/projects/app/src/app/foo/foo.component.css');
     });
@@ -85,9 +82,8 @@ describe('ngrid grid schematic', () => {
     it('should respect the option value', async () => {
       const tree =
           await runner
-              .runSchematicAsync(
-                  'grid', {inlineTemplate: true, ...baseOptions}, await createTestApp(runner))
-              .toPromise();
+              .runSchematic(
+                  'grid', {inlineTemplate: true, ...baseOptions}, await createTestApp(runner));
 
       expect(tree.files).not.toContain('/projects/app/src/app/foo/foo.component.html');
     });
@@ -95,9 +91,8 @@ describe('ngrid grid schematic', () => {
     it('should fall back to the @schematics/angular:component option value', async () => {
       const tree =
           await runner
-              .runSchematicAsync(
-                  'grid', baseOptions, await createTestApp(runner, {inlineTemplate: true}))
-              .toPromise();
+              .runSchematic(
+                  'grid', baseOptions, await createTestApp(runner, {inlineTemplate: true}));
 
       expect(tree.files).not.toContain('/projects/app/src/app/foo/foo.component.html');
     });
@@ -106,18 +101,16 @@ describe('ngrid grid schematic', () => {
   describe('skipTests option', () => {
     it('should respect the option value', async () => {
       const tree = await runner
-                       .runSchematicAsync(
-                           'grid', {skipTests: true, ...baseOptions}, await createTestApp(runner))
-                       .toPromise();
+                       .runSchematic(
+                           'grid', {skipTests: true, ...baseOptions}, await createTestApp(runner));
 
       expect(tree.files).not.toContain('/projects/app/src/app/foo/foo.component.spec.ts');
     });
 
     it('should fall back to the @schematics/angular:component option value', async () => {
       const tree = await runner
-                       .runSchematicAsync(
-                           'grid', baseOptions, await createTestApp(runner, {skipTests: true}))
-                       .toPromise();
+                       .runSchematic(
+                           'grid', baseOptions, await createTestApp(runner, {skipTests: true}));
 
       expect(tree.files).not.toContain('/projects/app/src/app/foo/foo.component.spec.ts');
     });

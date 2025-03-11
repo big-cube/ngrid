@@ -57,7 +57,7 @@ export interface CellTooltipOptions {
   message?: (event: PblNgridCellEvent<any>) => string;
 }
 
-@Directive({ selector: '[cellTooltip]', exportAs: 'pblOverflowTooltip' })
+@Directive({ selector: '[cellTooltip]', exportAs: 'pblOverflowTooltip', standalone: false, })
 export class PblNgridCellTooltipDirective<T> implements CellTooltipOptions, OnDestroy {
   static readonly PLUGIN_KEY: 'cellTooltip' = PLUGIN_KEY;
 
