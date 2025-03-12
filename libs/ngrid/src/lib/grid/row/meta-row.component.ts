@@ -11,6 +11,7 @@ import {
   ChangeDetectorRef,
   OnInit,
   OnDestroy,
+  Injector,
 } from '@angular/core';
 import { CdkHeaderRow } from '@angular/cdk/table';
 import { PblMetaRowDefinitions } from '@pebula/ngrid/core';
@@ -22,6 +23,7 @@ import { PblColumnGroup, PblMetaColumn } from '../column/model';
 import { PblNgridMetaRowService, PblMetaRow } from '../meta-rows/meta-row.service';
 import { PblColumnStoreMetaRow } from '../column/management';
 import { applyMetaRowClass, initColumnOrMetaRow } from './utils';
+import { EXT_API_TOKEN, PblNgridInternalExtensionApi } from '../../ext/grid-ext-api';
 
 @Component({
   selector: 'pbl-ngrid-meta-row',
@@ -56,10 +58,12 @@ export class PblNgridMetaRowComponent extends PblNgridBaseRowComponent<'meta-hea
 
   constructor(@Inject(PBL_NGRID_COMPONENT) @Optional() grid: _PblNgridComponent,
               cdRef: ChangeDetectorRef,
-               el: ElementRef<HTMLElement>,
+              @Inject(EXT_API_TOKEN) public extApi: PblNgridInternalExtensionApi,
+              public injector: Injector,
+              el: ElementRef<HTMLElement>,
               private readonly metaRows: PblNgridMetaRowService,
               @Attribute('footer') isFooter: any) {
-    super(grid, cdRef, el);
+    super(grid, cdRef, extApi, injector, el);
     this.isFooter = isFooter !== null;
     this.rowType = this.isFooter ? 'meta-footer' : 'meta-header';
   }

@@ -5,6 +5,10 @@ import {
   ViewEncapsulation,
   ViewContainerRef,
   ViewChild,
+  ElementRef,
+  Inject,
+  Injector,
+  runInInjectionContext,
 } from '@angular/core';
 import { unrx } from '@pebula/ngrid/core';
 
@@ -14,6 +18,7 @@ import { MetaCellContext } from '../context/index';
 import { PblNgridColumnDef } from '../column/directives/column-def';
 import { applySourceWidth, initCellElement, initCellHeaderFooter } from './utils';
 import { PblNgridBaseCell } from './base-cell';
+import { EXT_API_TOKEN, PblNgridInternalExtensionApi } from '../../ext/grid-ext-api';
 
 const HEADER_GROUP_CSS = `pbl-header-group-cell`;
 const HEADER_GROUP_PLACE_HOLDER_CSS = `pbl-header-group-cell-placeholder`;
@@ -47,6 +52,10 @@ export class PblNgridMetaCellComponent<T extends PblMetaColumn | PblColumnGroup 
   get columnDef(): PblNgridColumnDef<PblMetaColumn> { return this.column.columnDef; }
   get grid(): _PblNgridComponent { return this.extApi.grid; }
 
+  constructor(private readonly elementRef: ElementRef, @Inject(EXT_API_TOKEN) extApi: PblNgridInternalExtensionApi, private injector: Injector, ){
+    super(extApi, elementRef);
+  }
+
   setColumn(column: T, isFooter: boolean) {
     const prev = this.column;
     if (prev !== column) {
@@ -58,7 +67,8 @@ export class PblNgridMetaCellComponent<T extends PblMetaColumn | PblColumnGroup 
 
       if (column) {
         if (!column.columnDef) {
-          new PblNgridColumnDef(this.extApi).column = column;
+          const pblNgridColumnDef = runInInjectionContext(this.injector, () => new PblNgridColumnDef(this.extApi));
+          pblNgridColumnDef.column = column;
           column.columnDef.name = column.id;
         }
 

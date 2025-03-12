@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ComponentRef, ViewChild, ViewContainerRef, ViewEncapsulation, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ComponentRef, ViewChild, ViewContainerRef, ViewEncapsulation, OnDestroy, OnInit, runInInjectionContext } from '@angular/core';
 import { CdkRow } from '@angular/cdk/table';
 
 import { StylingDiffer, StylingDifferOptions, unrx } from '@pebula/ngrid/core';
@@ -49,6 +49,10 @@ export class PblNgridRowComponent<T = any> extends PblNgridBaseRowComponent<'dat
   private _lastClass: Set<string>;
   private _rowIndex: number;
   private outOfView = false;
+
+  // constructor(){
+  //   super();
+  // }
 
   ngOnInit(): void {
     super.ngOnInit();
@@ -247,7 +251,8 @@ export class PblNgridRowComponent<T = any> extends PblNgridBaseRowComponent<'dat
 
   protected attachColumn(column: PblColumn, cell: ComponentRef<PblNgridCellComponent>) {
     if (!column.columnDef) {
-      new PblNgridColumnDef(this._extApi).column = column;
+      const pblNgridColumnDef = runInInjectionContext(this.injector, () => new PblNgridColumnDef(this.extApi));
+      pblNgridColumnDef.column = column;
       column.columnDef.name = column.id;
     }
     cell.instance.setColumn(column);

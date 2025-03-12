@@ -56,6 +56,8 @@ export abstract class PblNgridBaseRowComponent<TRowType extends GridRowType, T =
 
   constructor(@Inject(PBL_NGRID_COMPONENT) @Optional() grid: _PblNgridComponent<T>,
               readonly cdRef: ChangeDetectorRef,
+              @Inject(EXT_API_TOKEN) public extApi: PblNgridInternalExtensionApi,
+              public injector: Injector,
               public elementRef: ElementRef<HTMLElement>) {
     this.element = this.elementRef.nativeElement;
     if (grid) {

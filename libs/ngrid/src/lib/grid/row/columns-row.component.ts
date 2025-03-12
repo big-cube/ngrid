@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ElementRef, Input, ViewEncapsulation, Optional, ComponentRef, Attribute, ChangeDetectorRef, OnDestroy, OnInit, Inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Input, ViewEncapsulation, Optional, ComponentRef, Attribute, ChangeDetectorRef, OnDestroy, OnInit, Inject, Injector, runInInjectionContext } from '@angular/core';
 import { CdkHeaderRow } from '@angular/cdk/table';
 import { PblMetaRowDefinitions, unrx } from '@pebula/ngrid/core';
 
@@ -9,6 +9,7 @@ import { PblNgridMetaRowService, PblMetaRow } from '../meta-rows/meta-row.servic
 import { PblNgridHeaderCellComponent } from '../cell/header-cell.component';
 import { applyMetaRowClass, initColumnOrMetaRow, setRowVisibility } from './utils';
 import { PblNgridColumnDef } from '../column/directives/column-def';
+import { EXT_API_TOKEN, PblNgridInternalExtensionApi } from '../../ext/grid-ext-api';
 
 /**
  * The row that represents the columns of the grid.
@@ -43,12 +44,14 @@ export class PblNgridColumnRowComponent extends PblNgridBaseRowComponent<'header
   private _meta: PblMetaRowDefinitions;
 
   constructor(@Inject(PBL_NGRID_COMPONENT) @Optional() grid: _PblNgridComponent,
+              @Inject(EXT_API_TOKEN) public extApi: PblNgridInternalExtensionApi,
+              public injector: Injector,
               cdRef: ChangeDetectorRef,
               el: ElementRef<HTMLElement>,
               private readonly metaRows: PblNgridMetaRowService,
               @Attribute('footer') isFooter: any,
               @Attribute('gridWidthRow') gridWidthRow: any) {
-    super(grid, cdRef, el);
+    super(grid, cdRef, extApi, injector, el);
     this.gridWidthRow = gridWidthRow !== null;
     this.isFooter = isFooter !== null;
     this.rowType = this.isFooter ? 'footer' : 'header';
@@ -91,7 +94,8 @@ export class PblNgridColumnRowComponent extends PblNgridBaseRowComponent<'header
 
   protected cellCreated(column: PblColumn, cell: ComponentRef<PblNgridHeaderCellComponent>) {
     if (!column.columnDef) {
-      new PblNgridColumnDef(this._extApi).column = column;
+      const pblNgridColumnDef = runInInjectionContext(this.injector, () => new PblNgridColumnDef(this.extApi));
+      pblNgridColumnDef.column = column;
       column.columnDef.name = column.id;
     }
     cell.instance.setColumn(column, this.gridWidthRow);
