@@ -701,6 +701,16 @@
                     ]
                   }
                 }
+              },
+              "stylePreprocessorOptions": {
+                "sass": {
+                  "silenceDeprecations": [
+                    "mixed-decls",
+                    "color-functions",
+                    "global-builtin",
+                    "import"
+                  ]
+                }
               }
             },
             "configurations": {
@@ -20440,12 +20450,43 @@
     }
   },
   "dependencies": {
-    "libs-internal-nx-repo-plugins": [],
+    "libs-internal-nx-repo-plugins": [
+      {
+        "source": "libs-internal-nx-repo-plugins",
+        "target": "npm:@nx/devkit",
+        "type": "static"
+      },
+      {
+        "source": "libs-internal-nx-repo-plugins",
+        "target": "npm:nx",
+        "type": "static"
+      },
+      {
+        "source": "libs-internal-nx-repo-plugins",
+        "target": "npm:ng-cli-packagr-tasks",
+        "type": "static"
+      },
+      {
+        "source": "libs-internal-nx-repo-plugins",
+        "target": "npm:@angular-devkit/build-angular",
+        "type": "static"
+      }
+    ],
     "ngrid-docs-app-e2e": [
       {
         "source": "ngrid-docs-app-e2e",
         "target": "ngrid-docs-app",
         "type": "implicit"
+      },
+      {
+        "source": "ngrid-docs-app-e2e",
+        "target": "npm:cypress",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app-e2e",
+        "target": "npm:@nx/cypress",
+        "type": "static"
       },
       {
         "source": "ngrid-docs-app-e2e",
@@ -20461,6 +20502,21 @@
       },
       {
         "source": "ngrid-dev-app-e2e",
+        "target": "npm:cypress",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-dev-app-e2e",
+        "target": "npm:@simonsmith/cypress-image-snapshot",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-dev-app-e2e",
+        "target": "npm:@nx/cypress",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-dev-app-e2e",
         "target": "ngrid-cypress",
         "type": "static"
       }
@@ -20468,14 +20524,154 @@
     "ngrid-bootstrap": [
       {
         "source": "ngrid-bootstrap",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-bootstrap",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-bootstrap",
+        "target": "npm:@angular/cdk",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-bootstrap",
+        "target": "npm:@ng-bootstrap/ng-bootstrap",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-bootstrap",
         "target": "ngrid",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-bootstrap",
+        "target": "npm:@angular/material",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-bootstrap",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-bootstrap",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-bootstrap",
+        "target": "npm:@angular/platform-browser-dynamic",
         "type": "static"
       }
     ],
     "ngrid-docs-app": [
       {
         "source": "ngrid-docs-app",
+        "target": "npm:tsconfig-paths",
+        "type": "dynamic"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:ts-node",
+        "type": "dynamic"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:unist-util-visit",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:gatsby-remark-prismjs",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:fs-extra",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:node-fetch",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:zone.js",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:express",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:webpack",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:simple-git",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:@ngtools/webpack",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:@ngtools/webpack",
+        "type": "dynamic"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:remark-slug",
+        "type": "dynamic"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:@rigor789/remark-autolink-headings",
+        "type": "dynamic"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:remark-attr",
+        "type": "dynamic"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:@angular/core",
+        "type": "dynamic"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:@angular/cdk",
+        "type": "dynamic"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:@angular/cdk",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
         "target": "ngrid",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:@angular/common",
         "type": "static"
       },
       {
@@ -20485,29 +20681,190 @@
       },
       {
         "source": "ngrid-docs-app",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:@angular/material",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:@angular/animations",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:@angular/forms",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:@angular/router",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:@ng-bootstrap/ng-bootstrap",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
         "target": "ngrid-bootstrap",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:@angular/platform-browser-dynamic",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:@angular/platform-browser",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:angulartics2",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:@angular/flex-layout",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:@angular/platform-server",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:@angular/localize",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-docs-app",
+        "target": "npm:resize-observer-polyfill",
         "type": "static"
       }
     ],
     "ngrid-material": [
       {
         "source": "ngrid-material",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-material",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-material",
+        "target": "npm:@angular/cdk",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-material",
+        "target": "npm:@angular/material",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-material",
         "target": "ngrid",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-material",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-material",
+        "target": "npm:@angular/platform-browser-dynamic",
         "type": "static"
       }
     ],
-    "ngrid-cypress": [],
+    "ngrid-cypress": [
+      {
+        "source": "ngrid-cypress",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
     "ngrid-dev-app": [
       {
         "source": "ngrid-dev-app",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-dev-app",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-dev-app",
+        "target": "npm:@angular/router",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-dev-app",
+        "target": "npm:@angular/material",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-dev-app",
+        "target": "npm:@angular/platform-browser",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-dev-app",
+        "target": "npm:@angular/platform-browser-dynamic",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-dev-app",
+        "target": "npm:@angular/cdk",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-dev-app",
         "target": "ngrid",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-dev-app",
+        "target": "npm:zone.js",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-dev-app",
+        "target": "npm:resize-observer-polyfill",
         "type": "static"
       }
     ],
     "ngrid": [
       {
         "source": "ngrid",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "ngrid",
         "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "ngrid",
+        "target": "npm:@angular/cdk",
         "type": "static"
       },
       {
@@ -20517,7 +20874,37 @@
       },
       {
         "source": "ngrid",
-        "target": "npm:@angular/cdk",
+        "target": "npm:@angular-devkit/schematics",
+        "type": "static"
+      },
+      {
+        "source": "ngrid",
+        "target": "npm:@schematics/angular",
+        "type": "static"
+      },
+      {
+        "source": "ngrid",
+        "target": "npm:@angular-devkit/core",
+        "type": "static"
+      },
+      {
+        "source": "ngrid",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      },
+      {
+        "source": "ngrid",
+        "target": "npm:zone.js",
+        "type": "static"
+      },
+      {
+        "source": "ngrid",
+        "target": "npm:@angular/platform-browser-dynamic",
+        "type": "static"
+      },
+      {
+        "source": "ngrid",
+        "target": "npm:@angular/cdk-experimental",
         "type": "static"
       }
     ],
@@ -45980,5 +46367,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1741692460036
+  "computedAt": 1741766391328
 }

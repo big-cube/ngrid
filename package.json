@@ -6,7 +6,7 @@
   "scripts": {
     "ng": "npx nx",
     "start": "./node_modules/.bin/nx serve",
-    "build-grid": "ng build ngrid --configuration production && ng build ngrid-material --configuration production",
+    "build-grid": "ng build ngrid --configuration production && ng build ngrid-material --configuration production && bash ./replace_pebula.sh",
     "test": "ng test",
     "lint": "./node_modules/.bin/nx workspace-lint && ng lint",
     "e2e": "ng e2e",

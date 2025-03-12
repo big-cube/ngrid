@@ -1028,6 +1028,10 @@
       "libs/ngrid-material/project.json",
       "nx/core/project-json"
     ],
+    "targets.build.options.stylePreprocessorOptions": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
     "targets.build.configurations.production": [
       "libs/ngrid-material/project.json",
       "nx/core/project-json"
