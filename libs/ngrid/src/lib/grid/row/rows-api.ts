@@ -272,7 +272,7 @@ export class PblRowsApi<T = any> implements RowsApi<T> {
 
   findDataRowByIndex(index: number): PblNgridRowComponent<T> | undefined {
     for (const r of this.dataRows()) {
-      if (r.rowIndex === index) {
+      if (r.context?.index === index) {
         return r;
       }
     }
