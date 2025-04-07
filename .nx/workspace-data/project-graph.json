@@ -20763,11 +20763,6 @@
       },
       {
         "source": "ngrid-material",
-        "target": "npm:@angular/common",
-        "type": "static"
-      },
-      {
-        "source": "ngrid-material",
         "target": "npm:@angular/cdk",
         "type": "static"
       },
@@ -20779,6 +20774,11 @@
       {
         "source": "ngrid-material",
         "target": "ngrid",
+        "type": "static"
+      },
+      {
+        "source": "ngrid-material",
+        "target": "npm:@angular/common",
         "type": "static"
       },
       {
@@ -46367,5 +46367,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1741943183336
+  "computedAt": 1744038318303
 }
