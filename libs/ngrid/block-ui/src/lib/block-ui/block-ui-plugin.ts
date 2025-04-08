@@ -13,7 +13,7 @@ declare module '@pebula/ngrid/lib/ext/types' {
 
 export const PLUGIN_KEY: 'blockUi' = 'blockUi';
 
-@Directive({ selector: 'pbl-ngrid[blockUi]', exportAs: 'blockUi' })
+@Directive({ selector: 'pbl-ngrid[blockUi]', exportAs: 'blockUi', standalone: false, })
 export class PblNgridBlockUiPluginDirective<T> implements OnDestroy {
 
   /**

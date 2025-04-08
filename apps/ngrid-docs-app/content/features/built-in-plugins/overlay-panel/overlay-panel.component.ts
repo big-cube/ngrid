@@ -12,6 +12,7 @@ import { Example } from '@pebula/apps/docs-app-lib';
   styleUrls: ['./overlay-panel.component.scss'],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false
 })
 @Example('pbl-overlay-panel-example', { title: 'Overlay Panel' })
 export class OverlayPanelExample {

@@ -1,18 +1,91 @@
+// Import modules
 @use '@angular/material' as mat;
 @use '../../../ngrid' as ngrid;
 @use '../../index' as ngrid-material;
-@use '@angular/material/core/theming/palettes' as palettes;
-// Define a theme.
-$primary: mat.m2-define-palette(palettes.$violet-palette);
-$accent:  mat.m2-define-palette(mat.$rose-palette, A200, A100, A400);
 
+// In Angular 19, we need to define palettes differently
+// Let's hardcode the color values for deep purple and amber
+// These values match the standard Material Design palette values
+
+// Define the Deep Purple palette
+$deep-purple-palette: (
+  50: #ede7f6,
+  100: #d1c4e9,
+  200: #b39ddb,
+  300: #9575cd,
+  400: #7e57c2,
+  500: #673ab7,
+  600: #5e35b1,
+  700: #512da8,
+  800: #4527a0,
+  900: #311b92,
+  A100: #b388ff,
+  A200: #7c4dff,
+  A400: #651fff,
+  A700: #6200ea,
+  contrast: (
+    50: rgba(0, 0, 0, 0.87),
+    100: rgba(0, 0, 0, 0.87),
+    200: rgba(0, 0, 0, 0.87),
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: rgba(0, 0, 0, 0.87),
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+// Define the Amber palette
+$amber-palette: (
+  50: #fff8e1,
+  100: #ffecb3,
+  200: #ffe082,
+  300: #ffd54f,
+  400: #ffca28,
+  500: #ffc107,
+  600: #ffb300,
+  700: #ffa000,
+  800: #ff8f00,
+  900: #ff6f00,
+  A100: #ffe57f,
+  A200: #ffd740,
+  A400: #ffc400,
+  A700: #ffab00,
+  contrast: (
+    50: rgba(0, 0, 0, 0.87),
+    100: rgba(0, 0, 0, 0.87),
+    200: rgba(0, 0, 0, 0.87),
+    300: rgba(0, 0, 0, 0.87),
+    400: rgba(0, 0, 0, 0.87),
+    500: rgba(0, 0, 0, 0.87),
+    600: rgba(0, 0, 0, 0.87),
+    700: rgba(0, 0, 0, 0.87),
+    800: rgba(0, 0, 0, 0.87),
+    900: rgba(0, 0, 0, 0.87),
+    A100: rgba(0, 0, 0, 0.87),
+    A200: rgba(0, 0, 0, 0.87),
+    A400: rgba(0, 0, 0, 0.87),
+    A700: rgba(0, 0, 0, 0.87),
+  )
+);
+
+// Create the primary and accent palettes using the hardcoded values
+$primary: mat.m2-define-palette($deep-purple-palette);
+$accent: mat.m2-define-palette($amber-palette);
+
+// Keep the same theme definition structure
 $theme: mat.m2-define-light-theme($primary, $accent);
 $pbl-ngrid-theme: ngrid.define-light-theme($theme);
 
-// Include all theme styles for the components.
+// Include all theme styles for the components
 @include ngrid.ngrid-typography();
 
-// Include the default theme styles.
+// Include the default theme styles
 @include ngrid-material.ngrid-material-theme($pbl-ngrid-theme);
 @include ngrid.predefined-spacing($pbl-ngrid-theme);
-

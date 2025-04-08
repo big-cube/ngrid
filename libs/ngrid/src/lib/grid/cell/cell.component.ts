@@ -29,6 +29,7 @@ function initDataCellElement(el: HTMLElement, column: PblColumn, prev?: PblColum
     '[attr.id]': 'column?.id',
     '[attr.tabindex]': 'column?.columnDef?.grid.cellFocus'
   },
+  standalone: false,
   exportAs: 'pblNgridCell',
 })
 export class PblNgridCellComponent extends PblNgridBaseCell implements DoCheck {

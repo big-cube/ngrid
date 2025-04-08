@@ -13,6 +13,7 @@ import { COL_DRAG_CONTAINER_PLUGIN_KEY, PblNgridColumnDragContainerDirective } f
     'class': 'cdk-drag',
     '[class.cdk-drag-dragging]': '_dragRef.isDragging()',
   },
+  standalone: false,
   providers: [
     { provide: DragDrop, useExisting: PblDragDrop },
     { provide: CDK_DRAG_PARENT, useExisting: PblNgridColumnDragDirective }

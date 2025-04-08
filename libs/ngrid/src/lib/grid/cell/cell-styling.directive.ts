@@ -42,7 +42,7 @@ import { StylingDiffer, StylingDifferOptions } from '@pebula/ngrid/core';
  * > Because style / class is applied on the parent and the parent can have multiple children it is possible to apply this directive
  * on multiple children, do not do this as it will have unexpected results.
  */
-@Directive({ selector: '[ngridCellStyle], [ngridCellClass]' })
+@Directive({ selector: '[ngridCellStyle], [ngridCellClass]', standalone: false, })
 export class PblNgridCellStyling {
 
   @Input('ngridCellStyle') set style(value: { [key: string]: string }) {

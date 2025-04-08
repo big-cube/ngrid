@@ -16,7 +16,7 @@ import { PblNgridSingleTemplateRegistry } from './single-template.directives';
  *   </pbl-ngrid>
  * ```
  */
-@Directive({ selector: '[pblNgridNoDataRef]' })
+@Directive({ selector: '[pblNgridNoDataRef]', standalone: false, })
 export class PblNgridNoDataRefDirective extends PblNgridSingleTemplateRegistry<{ $implicit: _PblNgridComponent<any> }, 'noData'> {
   readonly kind: 'noData' = 'noData';
   constructor(tRef: TemplateRef<{ $implicit: _PblNgridComponent<any> }>, registry: PblNgridRegistryService) { super(tRef, registry); }

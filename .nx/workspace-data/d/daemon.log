@@ -1,0 +1,143 @@
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:22.850Z - Started listening on: /tmp/52966b703ecf92b003a0/d.sock
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:22.851Z - [WATCHER]: Subscribed to changes within: /home/cihanemre/work/libraries/ngrid-bigcube/ngrid (native)
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:22.853Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:22.853Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:22.854Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:22.856Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:22.865Z - Time taken for 'loadSpecifiedNxPlugins' 0.8528480000000087ms
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:22.921Z - Time taken for 'Load Nx Plugin: /home/cihanemre/work/libraries/ngrid-bigcube/ngrid/node_modules/nx/src/adapter/angular-json' 64.108527ms
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:22.976Z - Time taken for 'Load Nx Plugin: /home/cihanemre/work/libraries/ngrid-bigcube/ngrid/node_modules/nx/src/plugins/js' 120.03791900000002ms
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:22.979Z - Time taken for 'Load Nx Plugin: /home/cihanemre/work/libraries/ngrid-bigcube/ngrid/node_modules/nx/src/plugins/project-json/build-nodes/project-json' 122.54668900000001ms
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:22.988Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:22.988Z - [REQUEST]: 
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:22.988Z - [REQUEST]: 
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:23.001Z - Time taken for 'loadDefaultNxPlugins' 130.33036399999997ms
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:23.045Z - Time taken for 'build-project-configs' 36.127024000000034ms
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:23.340Z - [SYNC]: collect registered sync generators
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:23.341Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:23.341Z - Time taken for 'total for creating and serializing project graph' 485.196942ms
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:23.342Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:23.342Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 486. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:23.349Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:23.350Z - Done responding to the client handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:23.350Z - Handled PRE_TASKS_EXECUTION. Handling time: 0. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:23.350Z - Time taken for 'preTasksExecution' 0.46093099999995957ms
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:23.385Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:23.385Z - Done responding to the client handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:23.385Z - Handled HASH_TASKS. Handling time: 13. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:24.571Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:24.571Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:24.571Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 1. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:25.209Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:25.209Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:25.209Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:25.211Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:25.211Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:25.211Z - Time taken for 'total for creating and serializing project graph' 0.19543100000009872ms
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:25.212Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:25.213Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:27.295Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:28.358Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:28.411Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:28.464Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:29.710Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:29.764Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:29.821Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:29.873Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:29.931Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:29.983Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:30.034Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:30.797Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:30.914Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:31.247Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:31.342Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:31.920Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:31.972Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:32.089Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:32.310Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:32.479Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:32.757Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:32.809Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:32.973Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:33.240Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:33.293Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:33.421Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:33.630Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:33.683Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:33.792Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:33.879Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:33.985Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:33.988Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:33.996Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:33.997Z - Done responding to the client recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:33.997Z - Handled RECORD_OUTPUTS_HASH. Handling time: 4. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.212Z - [REQUEST]: Responding to the client. PROCESS_IN_BACKGROUND
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.212Z - Done responding to the client PROCESS_IN_BACKGROUND
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.212Z - Handled PROCESS_IN_BACKGROUND. Handling time: 79. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.212Z - Uploading file artifacts
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.217Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.217Z - Done responding to the client handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.217Z - Handled POST_TASKS_EXECUTION. Handling time: 1. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.218Z - Time taken for 'postTasksExecution' 0.16564800000014657ms
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.253Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.480Z - Established a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.489Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.489Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.502Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.502Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.503Z - Time taken for 'total for creating and serializing project graph' 0.23874000000068918ms
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.565Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.565Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 63.
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.574Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.574Z - Done responding to the client handleRunPreTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.574Z - Handled PRE_TASKS_EXECUTION. Handling time: 1. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.574Z - Time taken for 'preTasksExecution' 0.21385400000144728ms
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.607Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.608Z - Done responding to the client handleHashTasks
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.608Z - Handled HASH_TASKS. Handling time: 13. Response time: 1.
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.800Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.800Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.800Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 0. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.812Z - [REQUEST]: Responding to the client. outputsHashesMatch
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.812Z - Done responding to the client outputsHashesMatch
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.812Z - Handled OUTPUTS_HASHES_MATCH. Handling time: 5. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.826Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.826Z - Done responding to the client recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:34.826Z - Handled RECORD_OUTPUTS_HASH. Handling time: 8. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:35.491Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:35.491Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:35.492Z - Established a connection. Number of open connections: 2
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:35.494Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:35.494Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:35.495Z - Time taken for 'total for creating and serializing project graph' 0.427852000000712ms
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:35.497Z - Done responding to the client project-graph
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:35.497Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:37.868Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:38.644Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:39.224Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:39.449Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:39.552Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:39.816Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:39.922Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:42.858Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:46.566Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:48.293Z - Closed a connection. Number of open connections: 1
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:48.299Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:48.299Z - Done responding to the client recordOutputsHash
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:48.299Z - Handled RECORD_OUTPUTS_HASH. Handling time: 2. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:48.299Z - [WATCHER]: Processing file changes in outputs
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:48.340Z - [REQUEST]: Responding to the client. PROCESS_IN_BACKGROUND
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:48.340Z - Done responding to the client PROCESS_IN_BACKGROUND
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:48.340Z - Handled PROCESS_IN_BACKGROUND. Handling time: 4. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:48.342Z - Uploading file artifacts
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:48.345Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:48.345Z - Done responding to the client handleRunPostTasksExecution
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:48.345Z - Handled POST_TASKS_EXECUTION. Handling time: 1. Response time: 0.
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:48.345Z - Time taken for 'postTasksExecution' 0.10131700000056298ms
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:48.352Z - Closed a connection. Number of open connections: 0
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:49.752Z - Done uploading file artifacts
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:49.753Z - Sending EndRun request
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:50.291Z - Done sending EndRun request
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:51.117Z - Done uploading file artifacts
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:51.117Z - Sending EndRun request
+[NX v20.5.0 Daemon Server] - 2025-03-14T09:06:51.669Z - Done sending EndRun request

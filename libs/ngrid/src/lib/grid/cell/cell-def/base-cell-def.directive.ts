@@ -9,7 +9,7 @@ import { PblColumnTypeDefinitionDataMap } from '@pebula/ngrid/core';
 import { PblNgridRegistryService } from '../../registry/registry.service';
 import { PblNgridCellDefDirectiveBase } from './types';
 
-@Directive()
+@Directive({ standalone: false,})
 export abstract class PblNgridBaseCellDef<Z> implements OnInit, OnDestroy, PblNgridCellDefDirectiveBase {
   name: string;
   type: keyof PblColumnTypeDefinitionDataMap;

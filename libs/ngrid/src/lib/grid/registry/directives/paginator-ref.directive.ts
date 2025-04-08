@@ -7,7 +7,7 @@ import { PblNgridSingleTemplateRegistry } from './single-template.directives';
 /**
  * Marks the element as the display element for pagination
  */
-@Directive({ selector: '[pblNgridPaginatorRef]' })
+@Directive({ selector: '[pblNgridPaginatorRef]', standalone: false, })
 export class PblNgridPaginatorRefDirective extends PblNgridSingleTemplateRegistry<{ $implicit: _PblNgridComponent<any> }, 'paginator'> {
   readonly kind: 'paginator' = 'paginator';
   constructor(tRef: TemplateRef<{ $implicit: _PblNgridComponent<any> }>, registry: PblNgridRegistryService) { super(tRef, registry); }

@@ -65,6 +65,18 @@ const APP_DEFAULT_VIRTUAL_SCROLL_STRATEGY = () => new PblNgridAutoSizeVirtualScr
     '[class.cdk-virtual-scroll-orientation-horizontal]': 'orientation === "horizontal"',
     '[class.cdk-virtual-scroll-orientation-vertical]': 'orientation === "vertical"'
   },
+  providers:[
+    {
+      provide: VIRTUAL_SCROLL_STRATEGY,
+      useFactory: () => {
+        const strategy = new PblNgridAutoSizeVirtualScrollStrategy(100, 200);
+        // Add the required itemSize property
+        (strategy as any)._itemSize = 48;
+        return strategy;
+      }
+    }
+  ],
+  standalone: false,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })

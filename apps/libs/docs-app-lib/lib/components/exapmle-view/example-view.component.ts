@@ -24,6 +24,7 @@ export const EXAMPLE_COMPONENTS_TOKEN = new InjectionToken('EXAMPLE_COMPONENTS')
   selector: 'pbl-example-view',
   templateUrl: './example-view.component.html',
   styleUrls: ['./example-view.component.scss'],
+  standalone: false,
   // tslint:disable-next-line: no-host-metadata-property
   host: {
     '[class.example-style-flow]': 'exampleStyle === "flow"',

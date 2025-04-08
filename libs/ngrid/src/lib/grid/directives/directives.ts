@@ -11,7 +11,8 @@ import { PblNgridComponent } from '../ngrid.component';
  */
 @Directive({
   selector: '[pblNgridOuterSection]',
-  inputs: [ 'position:pblNgridOuterSection' ] // tslint:disable-line:use-input-property-decorator
+  inputs: [ 'position:pblNgridOuterSection' ], // tslint:disable-line:use-input-property-decorator
+  standalone: false,
 })
 export class PblNgridOuterSectionDirective implements AfterViewInit {
 

@@ -38,7 +38,29 @@ async function schematicsCompileTask(context: EntryPointTaskContext) {
     return;
   }
 
-  const schematicsCompile = globalContext.options.tasks.data.schematicsCompile;
+  const options = globalContext.options as any;
+
+  // Try to find schematicsCompile configuration
+  let schematicsCompile;
+
+  // Add debug logging to see the full structure of options
+  console.log('Options keys:', Object.keys(options));
+
+  // Try different possible paths to access the configuration
+  if (options.schematicsCompile) {
+    schematicsCompile = options.schematicsCompile;
+  } else if (options.tasks?.data?.schematicsCompile) {
+    schematicsCompile = options.tasks.data.schematicsCompile;
+  } else if (options.data?.schematicsCompile) {
+    schematicsCompile = options.data.schematicsCompile;
+  }
+
+  // if (!schematicsCompile) {
+  //   return;
+  // }
+
+
+  // const schematicsCompile = globalContext.options.tasks.data.schematicsCompile;
   if (!schematicsCompile) {
     return;
   }

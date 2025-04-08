@@ -10,6 +10,7 @@ import { Example } from '@pebula/apps/docs-app-lib';
   styleUrls: ['./drag.component.scss'],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 @Example('pbl-drag-example', { title: 'Drag' })
 export class DragExample {

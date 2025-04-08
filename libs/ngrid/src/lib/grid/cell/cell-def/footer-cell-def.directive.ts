@@ -9,7 +9,8 @@ import { PblNgridBaseCellDef } from './base-cell-def.directive';
   inputs: [
     'name:pblNgridFooterCellDef',
     'type:pblNgridFooterCellTypeDef',
-  ]
+  ],
+  standalone: false,
 })
 export class PblNgridFooterCellDefDirective<T> extends PblNgridBaseCellDef<PblNgridMetaCellContext<T>> {
   constructor(tRef: TemplateRef<PblNgridMetaCellContext<T>>, registry: PblNgridRegistryService) { super(tRef, registry); }

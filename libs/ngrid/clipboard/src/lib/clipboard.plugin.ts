@@ -40,7 +40,7 @@ const DEFAULT_ROW_SEP = '\n';
 
 export const PLUGIN_KEY: 'clipboard' = 'clipboard';
 
-@Directive({ selector: 'pbl-ngrid[clipboard]', exportAs: 'pblNgridClipboard' })
+@Directive({ selector: 'pbl-ngrid[clipboard]', exportAs: 'pblNgridClipboard', standalone: false, })
 export class PblNgridClipboardPlugin implements OnDestroy {
 
   static create(grid: PblNgridComponent, injector: Injector): PblNgridClipboardPlugin {

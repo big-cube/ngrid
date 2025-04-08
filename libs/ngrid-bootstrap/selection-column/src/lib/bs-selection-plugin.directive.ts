@@ -12,7 +12,7 @@ declare module '@pebula/ngrid/lib/ext/types' {
 
 export const PLUGIN_KEY: 'bsSelectionColumn' = 'bsSelectionColumn';
 
-@Directive({ selector: 'pbl-ngrid[bsSelectionColumn]' })
+@Directive({ selector: 'pbl-ngrid[bsSelectionColumn]', standalone: false, })
 export class PblNgridBsSelectionPlugin implements OnDestroy {
 
   @Input() get isCheckboxDisabled() { return this._isCheckboxDisabled; }

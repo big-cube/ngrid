@@ -19,7 +19,8 @@ declare const BUILD_VERSION: string;
 @Component({
   selector: 'pbl-markdown-page-container',
   templateUrl: './markdown-page-container.component.html',
-  styleUrls: ['./markdown-page-container.component.scss']
+  styleUrls: ['./markdown-page-container.component.scss'],
+  standalone: false,
 })
 export class MarkdownPageContainerComponent implements AfterViewInit, OnDestroy {
 

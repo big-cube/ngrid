@@ -4,19 +4,11 @@ import {
   Injector,
   OnDestroy,
   Input,
-  NgZone,
-  ViewContainerRef,
   runInInjectionContext,
 } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
 
 import { BooleanInput, coerceBooleanProperty, NumberInput } from '@angular/cdk/coercion';
-import { AriaDescriber, FocusMonitor } from '@angular/cdk/a11y';
-import { Directionality } from '@angular/cdk/bidi';
-import { Overlay } from '@angular/cdk/overlay';
-import { ScrollDispatcher } from '@angular/cdk/scrolling';
-import { Platform} from '@angular/cdk/platform';
-import { TooltipPosition, MatTooltipDefaultOptions, MatTooltip, MAT_TOOLTIP_SCROLL_STRATEGY, MAT_TOOLTIP_DEFAULT_OPTIONS } from '@angular/material/tooltip';
+import { TooltipPosition, MatTooltip } from '@angular/material/tooltip';
 
 import { unrx, PblNgridConfigService } from '@pebula/ngrid/core';
 import { PblNgridComponent, PblNgridPluginController } from '@pebula/ngrid';
@@ -57,7 +49,7 @@ export interface CellTooltipOptions {
   message?: (event: PblNgridCellEvent<any>) => string;
 }
 
-@Directive({ selector: '[cellTooltip]', exportAs: 'pblOverflowTooltip' })
+@Directive({ selector: '[cellTooltip]', exportAs: 'pblOverflowTooltip', standalone: false, })
 export class PblNgridCellTooltipDirective<T> implements CellTooltipOptions, OnDestroy {
   static readonly PLUGIN_KEY: 'cellTooltip' = PLUGIN_KEY;
 
@@ -83,8 +75,6 @@ export class PblNgridCellTooltipDirective<T> implements CellTooltipOptions, OnDe
   /** See Material docs for MatTooltip */
   @Input() hideDelay: number;
 
-  private initArgs: [ Overlay, ElementRef<HTMLElement>, ScrollDispatcher, ViewContainerRef, NgZone, Platform, AriaDescriber, FocusMonitor, any, Directionality, MatTooltipDefaultOptions, any];
-
   private toolTip: MatTooltip;
   private lastConfig: CellTooltipOptions;
   private _removePlugin: (table: PblNgridComponent<any>) => void;
@@ -94,21 +84,6 @@ export class PblNgridCellTooltipDirective<T> implements CellTooltipOptions, OnDe
     this._removePlugin = pluginCtrl.setPlugin(PLUGIN_KEY, this);
 
     const configService = injector.get(PblNgridConfigService);
-
-    this.initArgs = [
-      injector.get(Overlay),
-      null,
-      injector.get(ScrollDispatcher),
-      injector.get(ViewContainerRef),
-      injector.get(NgZone),
-      injector.get(Platform),
-      injector.get(AriaDescriber),
-      injector.get(FocusMonitor),
-      injector.get(MAT_TOOLTIP_SCROLL_STRATEGY),
-      injector.get(Directionality),
-      injector.get(MAT_TOOLTIP_DEFAULT_OPTIONS),
-      injector.get(DOCUMENT),
-    ];
 
     configService.onUpdate('cellTooltip')
       .pipe(unrx(this))
@@ -150,10 +125,8 @@ export class PblNgridCellTooltipDirective<T> implements CellTooltipOptions, OnDe
     }
 
     if (this._canShow(event)) {
-      const params = this.initArgs.slice() as PblNgridCellTooltipDirective<any>['initArgs'];
-      params[1] = new ElementRef<any>(event.cellTarget);
 
-      this.toolTip = runInInjectionContext(this.injector, () => new MatTooltip(...params)) ;
+      this.toolTip = runInInjectionContext(Injector.create({providers: [{provide: ElementRef, useValue: new ElementRef<any>(event.cellTarget) }], parent: this.injector}), () => new MatTooltip()) ;
 
       const message = this.message || (this.lastConfig && this.lastConfig.message) || DEFAULT_OPTIONS.message;
       this.toolTip.message = message(event);

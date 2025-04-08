@@ -16,6 +16,7 @@ export const PBL_NGRID_ROW_TEMPLATE  = `<ng-content select=".pbl-ngrid-row-prefi
   ],
   exportAs: 'pblNgridInfiniteRow',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
   encapsulation: ViewEncapsulation.None,
 })
 export class PblNgridInfiniteRowComponent<T = any> extends PblNgridRowComponent<T> {

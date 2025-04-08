@@ -17,6 +17,7 @@ const ALWAYS_FALSE_FN = () => false;
   templateUrl: './bs-selection.component.html',
   styleUrls: ['./bs-selection.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
   encapsulation: ViewEncapsulation.None,
 })
 export class PblNgridBsSelectionComponent implements AfterViewInit, OnDestroy {

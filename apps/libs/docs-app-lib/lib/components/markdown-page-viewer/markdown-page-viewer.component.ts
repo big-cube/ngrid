@@ -39,6 +39,7 @@ import { MarkdownPageContainerComponent } from '../markdown-page-container/markd
     '[class.no-parent-container]': '!hasContainer',
     '[class.hide-primary-header]': 'hidePrimaryHeader',
   },
+  standalone: false,
   encapsulation: ViewEncapsulation.None,
 })
 export class MarkdownPageViewerComponent implements OnDestroy {

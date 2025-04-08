@@ -68,7 +68,7 @@ export interface PblNgridDataHeaderExtensionRef<T = any> {
  *
  * Note that the `shouldRender` predicate is run once when the header initialize.
  */
-@Directive({ selector: '[pblNgridHeaderExtensionRef]' })
+@Directive({ selector: '[pblNgridHeaderExtensionRef]', standalone: false, })
 export class PblNgridHeaderExtensionRefDirective extends PblNgridMultiTemplateRegistry<PblNgridDataHeaderExtensionContext, 'dataHeaderExtensions'> implements PblNgridDataHeaderExtensionRef {
   private static _id = 0;
 

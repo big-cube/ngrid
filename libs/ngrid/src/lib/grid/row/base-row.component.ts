@@ -22,7 +22,7 @@ import { PblRowTypeToColumnTypeMap } from '../column/management';
 export const PBL_NGRID_BASE_ROW_TEMPLATE  = `<ng-container #viewRef></ng-container>`;
 
 // tslint:disable-next-line: no-conflicting-lifecycle
-@Directive()
+@Directive({standalone: false,})
 export abstract class PblNgridBaseRowComponent<TRowType extends GridRowType, T = any> implements OnInit, DoCheck, AfterViewInit, OnDestroy {
 
   grid: _PblNgridComponent<T>;
@@ -56,6 +56,8 @@ export abstract class PblNgridBaseRowComponent<TRowType extends GridRowType, T =
 
   constructor(@Inject(PBL_NGRID_COMPONENT) @Optional() grid: _PblNgridComponent<T>,
               readonly cdRef: ChangeDetectorRef,
+              @Inject(EXT_API_TOKEN) public extApi: PblNgridInternalExtensionApi,
+              public injector: Injector,
               public elementRef: ElementRef<HTMLElement>) {
     this.element = this.elementRef.nativeElement;
     if (grid) {

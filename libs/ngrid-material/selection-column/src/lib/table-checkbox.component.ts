@@ -18,6 +18,7 @@ const ALWAYS_FALSE_FN = () => false;
   templateUrl: './table-checkbox.component.html',
   styleUrls: ['./table-checkbox.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
   encapsulation: ViewEncapsulation.None,
 })
 export class PblNgridCheckboxComponent implements AfterViewInit, OnDestroy {

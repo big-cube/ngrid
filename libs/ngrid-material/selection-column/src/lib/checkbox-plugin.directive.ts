@@ -13,7 +13,7 @@ declare module '@pebula/ngrid/lib/ext/types' {
 
 export const PLUGIN_KEY: 'matCheckboxSelection' = 'matCheckboxSelection';
 
-@Directive({ selector: 'pbl-ngrid[matCheckboxSelection]' })
+@Directive({ selector: 'pbl-ngrid[matCheckboxSelection]', standalone: false, })
 export class PblNgridMatCheckboxSelectionDirective implements OnDestroy {
 
   @Input() get isCheckboxDisabled() { return this._isCheckboxDisabled; }

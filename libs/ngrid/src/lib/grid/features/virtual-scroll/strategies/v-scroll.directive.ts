@@ -10,6 +10,7 @@ import { PblNgridBaseVirtualScrollDirective } from './base-v-scroll.directive';
 @Directive({
   selector: 'pbl-ngrid[vScrollDynamic], pbl-ngrid[vScrollNone]', // tslint:disable-line: directive-selector
   inputs: [ 'minBufferPx', 'maxBufferPx', 'wheelMode' ], // tslint:disable-line: no-inputs-metadata-property
+  standalone: false,
   providers: [{
     provide: VIRTUAL_SCROLL_STRATEGY,
     useExisting: PblCdkVirtualScrollDirective,

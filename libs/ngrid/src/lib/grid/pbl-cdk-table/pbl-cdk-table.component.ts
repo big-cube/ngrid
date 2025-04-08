@@ -64,6 +64,7 @@ import { PblColumn } from '../column/model';
     // Prevent nested tables from seeing this table's StickyPositioningListener.
     {provide: STICKY_POSITIONING_LISTENER, useValue: null},
   ],
+  standalone: false,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

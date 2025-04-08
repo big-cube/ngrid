@@ -13,6 +13,7 @@ import { CDK_DRAG_HANDLE, CdkDragHandle, CDK_DRAG_PARENT } from '@angular/cdk/dr
   host: { // tslint:disable-line:use-host-property-decorator
     'class': 'cdk-drag-handle'
   },
+  standalone: false,
   providers: [
     {
       provide: CDK_DRAG_HANDLE,

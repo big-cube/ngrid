@@ -12,7 +12,8 @@ import { EXT_API_TOKEN, PblNgridExtensionApi } from '../../ext/grid-ext-api';
   inputs: ['columns: pblNgridRowDefColumns', 'when: pblNgridRowDefWhen'],
   providers: [
     {provide: CdkRowDef, useExisting: PblNgridRowDef},
-  ]
+  ],
+  standalone: false,
 })
 export class PblNgridRowDef<T> extends CdkRowDef<T> {
 
@@ -65,7 +66,8 @@ export class PblNgridRowDef<T> extends CdkRowDef<T> {
   inputs: ['columns: pblNgridRowDefColumns', 'when: pblNgridRowDefWhen', 'grid: pblNgridRowDefGrid'],
   providers: [
     {provide: CdkRowDef, useExisting: PblNgridRowDef},
-  ]
+  ],
+  standalone: false,
 })
 export class PblNgridRowOverride<T> extends PblNgridRowDef<T> implements OnInit {
 

@@ -25,6 +25,7 @@ export const COL_REORDER_PLUGIN_KEY: 'columnReorder' = 'columnReorder';
     '[class.cdk-drop-list-dragging]': '_dropListRef.isDragging()',
     '[class.cdk-drop-list-receiving]': '_dropListRef.isReceiving()',
   },
+  standalone: false,
   providers: [
     { provide: DragDrop, useExisting: PblDragDrop },
     { provide: CDK_DROP_LIST, useExisting: PblNgridColumnReorderPluginDirective },

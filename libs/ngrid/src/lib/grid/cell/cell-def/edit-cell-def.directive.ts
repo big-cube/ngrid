@@ -10,7 +10,8 @@ import { PblNgridBaseCellDef } from './base-cell-def.directive';
   inputs: [
     'name:pblNgridCellEditorDef',
     'type:pblNgridCellEditorTypeDef',
-  ]
+  ],
+  standalone: false,
 })
 export class PblNgridEditorCellDefDirective<T, P extends keyof PblColumnTypeDefinitionDataMap = any> extends PblNgridBaseCellDef<PblNgridCellContext<T, P>> {
   type: P = undefined!;

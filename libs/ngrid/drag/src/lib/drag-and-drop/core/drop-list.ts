@@ -32,6 +32,7 @@ import { PblDragDrop } from './drag-drop';
     { provide: DragDrop, useExisting: PblDragDrop },
     { provide: CDK_DROP_LIST, useClass: CdkLazyDropList },
   ],
+  standalone: false,
   host: { // tslint:disable-line:no-host-metadata-property
     'class': 'cdk-drop-list',
     '[id]': 'id',

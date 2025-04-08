@@ -80,7 +80,7 @@ export function setStickyColumns(grid: PblNgridComponent<any>, type: 'start' | '
   }
 }
 
-@Directive({ selector: 'pbl-ngrid[stickyColumnStart], pbl-ngrid[stickyColumnEnd], pbl-ngrid[stickyHeader], pbl-ngrid[stickyFooter]' })
+@Directive({ selector: 'pbl-ngrid[stickyColumnStart], pbl-ngrid[stickyColumnEnd], pbl-ngrid[stickyHeader], pbl-ngrid[stickyFooter]', standalone: false, })
 export class PblNgridStickyPluginDirective implements AfterViewInit, OnDestroy {
   /**
    * Set the header rows you want to apply sticky positioning to.

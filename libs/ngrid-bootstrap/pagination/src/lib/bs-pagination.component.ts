@@ -19,6 +19,7 @@ const DEFAULT_PAGE_SIZE_OPTIONS = [5, 10, 20, 50, 100];
   templateUrl: './bs-pagination.component.html',
   styleUrls: ['./bs-pagination.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
   encapsulation: ViewEncapsulation.None
 })
 export class PblNgridBsPagination implements OnDestroy {

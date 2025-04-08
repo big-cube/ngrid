@@ -3,7 +3,8 @@ import { Directive, TemplateRef } from '@angular/core';
 import { TocComponent, TocLinkTemplateContext } from './toc.component';
 
 @Directive({
-  selector: '[pblContentTocLinkTemplate]'
+  selector: '[pblContentTocLinkTemplate]',
+  standalone: false,
 })
 export class TocLinkTemplateDirective {
   constructor(tocComponent: TocComponent, template: TemplateRef<TocLinkTemplateContext>) {

@@ -54,7 +54,7 @@ export interface CellTooltipOptions {
   message?: (event: PblNgridCellEvent<any>) => string;
 }
 
-@Directive({ selector: '[bsCellTooltip]', exportAs: 'bsCellTooltip' })
+@Directive({ selector: '[bsCellTooltip]', exportAs: 'bsCellTooltip', standalone: false, })
 export class PblNgridCellTooltipDirective<T> implements CellTooltipOptions, OnDestroy {
   static readonly PLUGIN_KEY: 'bsCellTooltip' = PLUGIN_KEY;
 
@@ -140,10 +140,7 @@ export class PblNgridCellTooltipDirective<T> implements CellTooltipOptions, OnDe
     if (this._canShow(event)) {
       const params = this.initArgs.slice() as PblNgridCellTooltipDirective<any>['initArgs'];
 
-      this.toolTip = new NgbTooltip(
-        new ElementRef<any>(event.cellTarget),
-        ...params,
-      );
+      this.toolTip = new NgbTooltip();
 
       this.toolTip.container = 'body';
       const message = this.message || (this.lastConfig && this.lastConfig.message) || DEFAULT_OPTIONS.message;

@@ -25,7 +25,8 @@ import { PblNgridBaseCellDef } from './base-cell-def.directive';
   inputs: [
     'name:pblNgridCellDef',
     'type:pblNgridCellTypeDef',
-  ]
+  ],
+  standalone: false,
 })
 export class PblNgridCellDefDirective<T, P extends keyof PblColumnTypeDefinitionDataMap = any> extends PblNgridBaseCellDef<PblNgridCellContext<T, P>> {
   type: P = undefined!;

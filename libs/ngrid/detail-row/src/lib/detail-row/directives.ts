@@ -53,7 +53,7 @@ export interface PblNgridDetailRowContext<T = any> {
 /**
  * Marks the element as the display element for the detail row itself.
  */
-@Directive({ selector: '[pblNgridDetailRowDef]' })
+@Directive({ selector: '[pblNgridDetailRowDef]', standalone: false, })
 export class PblNgridDetailRowDefDirective extends PblNgridSingleTemplateRegistry<PblNgridDetailRowContext, 'detailRow'> {
   readonly kind: 'detailRow' = 'detailRow';
 
@@ -90,6 +90,7 @@ export class PblNgridDetailRowDefDirective extends PblNgridSingleTemplateRegistr
 @Directive({
   selector: '[pblNgridDetailRowParentRef]',
   inputs: ['columns: pblNgridDetailRowParentRef', 'when: pblNgridDetailRowParentRefWhen'],
+  standalone: false,
 })
 export class PblNgridDetailRowParentRefDirective<T> extends PblNgridRowDef<T> implements OnInit, OnDestroy {
 

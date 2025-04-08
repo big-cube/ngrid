@@ -10,6 +10,7 @@ import { PblNgridComponent, AutoSizeToFitOptions } from '@pebula/ngrid';
   templateUrl: './demo-action-row.component.html',
   styleUrls: [ './demo-action-row.component.scss' ],
   encapsulation: ViewEncapsulation.None,
+  standalone: false,
 })
 export class DemoActionRowComponent implements AfterViewInit {
 

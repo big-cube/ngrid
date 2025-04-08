@@ -11,6 +11,7 @@ import { PblColumnDragDropContainerEnter, PblColumnDragDropContainerExit, PblCol
   styleUrls: ['./column-bin.component.scss'],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 @Example('pbl-column-bin-example', { title: 'Column Bin' })
 export class ColumnBinExample {

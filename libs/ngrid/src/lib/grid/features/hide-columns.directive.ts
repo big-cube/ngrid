@@ -3,7 +3,8 @@ import { PblNgridPluginController } from '../../ext/plugin-control';
 import { PblColumnStore } from '../column/management';
 
 @Directive({
-  selector: 'pbl-ngrid[hideColumns]'
+  selector: 'pbl-ngrid[hideColumns]',
+  standalone: false,
 })
 export class PblNgridHideColumns implements DoCheck {
 

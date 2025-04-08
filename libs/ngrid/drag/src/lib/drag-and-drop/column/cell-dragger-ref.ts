@@ -12,7 +12,7 @@ import { COL_DRAG_CONTAINER_PLUGIN_KEY } from './column-drag-container';
 /**
  * Marks the element as the resizer template for cells.
  */
-@Directive({ selector: '[pblNgridCellDraggerRef]' })
+@Directive({ selector: '[pblNgridCellDraggerRef]', standalone: false, })
 export class PblNgridCellDraggerRefDirective extends PblNgridMultiTemplateRegistry<PblNgridDataHeaderExtensionContext, 'dataHeaderExtensions'> implements PblNgridDataHeaderExtensionRef {
   readonly name: 'cellDragger' = 'cellDragger';
   readonly kind: 'dataHeaderExtensions' = 'dataHeaderExtensions';

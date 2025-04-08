@@ -6,6 +6,7 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/
 `<pbl-ngrid-drag-resize *pblNgridCellResizerRef="let ctx" [context]="ctx"></pbl-ngrid-drag-resize>
 <span *pblNgridCellDraggerRef="let ctx" [pblNgridColumnDrag]="ctx.col" cdkDragRootElementClass="cdk-drag"></span>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
   encapsulation: ViewEncapsulation.None,
 })
 export class DragPluginDefaultTemplatesComponent {}

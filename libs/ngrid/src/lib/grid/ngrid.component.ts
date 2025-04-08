@@ -89,6 +89,7 @@ declare module '../ext/types' {
       deps: [forwardRef(() => PblNgridComponent)],
     }
   ],
+  standalone: false,
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
 })

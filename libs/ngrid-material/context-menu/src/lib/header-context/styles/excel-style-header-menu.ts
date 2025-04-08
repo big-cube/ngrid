@@ -9,6 +9,7 @@ import { PblNgridOverlayPanelRef } from '@pebula/ngrid/overlay-panel';
   templateUrl: `./excel-style-header-menu.html`,
   styleUrls: [ `./excel-style-header-menu.scss` ],
   encapsulation: ViewEncapsulation.None,
+  standalone: false,
 })
 export class MatExcelStyleHeaderMenu {
   column: PblColumn;
@@ -43,10 +44,10 @@ export class MatExcelStyleHeaderMenu {
     const view = this.menuViewLocation.createEmbeddedView(this.matMenu.templateRef);
     this.matMenu.setElevation(0);
     this.matMenu.focusFirstItem('program');
-    this.matMenu._resetAnimation();
+    this.matMenu._setIsOpen(false); // Reset animation state
     view.markForCheck();
     view.detectChanges();
-    this.matMenu._startAnimation();
+    this.matMenu._setIsOpen(true);
   }
 
   hide(): void {

@@ -12,6 +12,7 @@ import { PblNgridRowReorderPluginDirective, ROW_REORDER_PLUGIN_KEY } from './row
     'class': 'cdk-drag',
     '[class.cdk-drag-dragging]': '_dragRef.isDragging()',
   },
+  standalone: false,
   providers: [
     { provide: DragDrop, useExisting: PblDragDrop },
     { provide: CDK_DRAG_PARENT, useExisting: PblNgridRowDragDirective },
