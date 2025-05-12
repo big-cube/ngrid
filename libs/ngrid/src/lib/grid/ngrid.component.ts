@@ -397,10 +397,10 @@ export class PblNgridComponent<T = any> implements AfterContentInit, AfterViewIn
       processColumns = true;
     }
 
-    if ( processColumns === true ) {
-      this.invalidateColumns();
-      this.ngZone.onStable.pipe(take(1)).subscribe(() => this.rowsApi.syncRows('all', true));
-    }
+    // if ( processColumns === true ) {
+    //   this.invalidateColumns();
+    //   this.ngZone.onStable.pipe(take(1)).subscribe(() => this.rowsApi.syncRows('all', true));
+    // }
   }
 
   ngOnDestroy(): void {
