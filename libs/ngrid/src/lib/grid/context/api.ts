@@ -154,7 +154,7 @@ export class ContextApi<T = any> {
           const dataPoint = { rowIdent, colIndex };
           this.activeSelected.push(dataPoint);
           added.push(dataPoint);
-          this.extApi.rowsApi.findDataRowByIdentity(rowIdent).updateOutOfView();
+          this.extApi.rowsApi.findDataRowByIdentity(rowIdent).cdRef.markForCheck();
 
           toMarkRendered.add(ref.rowContext.index);
         }
@@ -163,7 +163,7 @@ export class ContextApi<T = any> {
         if (!rowState.cells[colIndex].selected) {
           this.updateState(rowState.identity, colIndex, { selected: true });
           this.activeSelected.push( { rowIdent: rowState.identity, colIndex } );
-          this.extApi.rowsApi.findDataRowByIdentity(rowState.identity).updateOutOfView();
+          this.extApi.rowsApi.findDataRowByIdentity(rowState.identity).cdRef.markForCheck();
         }
       }
     }
