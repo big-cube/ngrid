@@ -142,9 +142,11 @@ export class ContextApi<T = any> {
     }
 
     const added: GridDataPoint[] = [];
-
+    console.log('cellRefs ===> ', cellRefs);
+    console.log('toMarkRendered (before) ===> ', toMarkRendered);
     for (const cellRef of cellRefs) {
       const ref = resolveCellReference(cellRef, this as any);
+      console.log('ref', ref);
       if (ref instanceof PblCellContext) {
         if (!ref.selected && !this.extApi.grid.viewport.isScrolling) {
           const rowIdent = ref.rowContext.identity
@@ -167,7 +169,7 @@ export class ContextApi<T = any> {
         }
       }
     }
-
+    console.log('toMarkRendered (after) ===> ', toMarkRendered);
     if (toMarkRendered.size > 0) {
       this.extApi.grid.rowsApi.syncRows('data', ...Array.from(toMarkRendered.values()));
     }
@@ -241,8 +243,10 @@ export class ContextApi<T = any> {
     this.viewCacheGhost.clear();
     this.cache.clear();
     if (syncView === true) {
-      for (const r of this.extApi.rowsApi.dataRows()) {
-        this.viewCache.set(r.rowIndex, r.context);
+      const dataRows = this.extApi.rowsApi.dataRows();
+      for (const r of dataRows) {
+        const rowIndex = r.rowIndex ?? r.context.dsIndex ?? r.context.index ?? r.context.dataIndex;
+        this.viewCache.set(rowIndex, r.context);
         // we're clearing the existing view state on the component
         // If in the future we want to update state and not clear, remove this one
         // and instead just take the state and put it in the cache.

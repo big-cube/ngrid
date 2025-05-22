@@ -397,10 +397,10 @@ export class PblNgridComponent<T = any> implements AfterContentInit, AfterViewIn
       processColumns = true;
     }
 
-    // if ( processColumns === true ) {
-    //   this.invalidateColumns();
-    //   this.ngZone.onStable.pipe(take(1)).subscribe(() => this.rowsApi.syncRows('all', true));
-    // }
+    if ( processColumns === true ) {
+      this.invalidateColumns(true);
+      this.ngZone.onStable.pipe(take(1)).subscribe(() => this.rowsApi.syncRows('all', true));
+    }
   }
 
   ngOnDestroy(): void {
@@ -614,10 +614,10 @@ export class PblNgridComponent<T = any> implements AfterContentInit, AfterViewIn
   /**
    * Invalidates the header, including a full rebuild of column headers
    */
-  invalidateColumns(): void {
+  invalidateColumns(syncView?: boolean): void {
     this._plugin.emitEvent({ source: 'grid', kind: 'beforeInvalidateHeaders' });
 
-    this._extApi.contextApi.clear();
+    this._extApi.contextApi.clear(syncView);
     this._store.invalidate(this.columns);
 
     this._store.attachCustomCellTemplates();
