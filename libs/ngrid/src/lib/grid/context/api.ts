@@ -142,11 +142,8 @@ export class ContextApi<T = any> {
     }
 
     const added: GridDataPoint[] = [];
-    console.log('cellRefs ===> ', cellRefs);
-    console.log('toMarkRendered (before) ===> ', toMarkRendered);
     for (const cellRef of cellRefs) {
       const ref = resolveCellReference(cellRef, this as any);
-      console.log('ref', ref);
       if (ref instanceof PblCellContext) {
         if (!ref.selected && !this.extApi.grid.viewport.isScrolling) {
           const rowIdent = ref.rowContext.identity
@@ -169,7 +166,6 @@ export class ContextApi<T = any> {
         }
       }
     }
-    console.log('toMarkRendered (after) ===> ', toMarkRendered);
     if (toMarkRendered.size > 0) {
       this.extApi.grid.rowsApi.syncRows('data', ...Array.from(toMarkRendered.values()));
     }
