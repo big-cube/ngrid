@@ -26,6 +26,6 @@ export class PblNgridCellDraggerRefDirective extends PblNgridMultiTemplateRegist
     // However, when the plugin does not exists for this table we don't need to render...
 
     const pluginCtrl = PblNgridPluginController.find(context.grid);
-    return pluginCtrl.hasPlugin(COL_DRAG_CONTAINER_PLUGIN_KEY);
+    return pluginCtrl?.hasPlugin(COL_DRAG_CONTAINER_PLUGIN_KEY);
   }
 }

@@ -73,7 +73,7 @@ export class PblNgridCachedRowViewRepeaterStrategy<T, R extends RenderRow<T>, C 
   private _maybeCacheView(view: EmbeddedViewRef<C>, viewContainerRef: ViewContainerRef) {
     if (this._viewCache.length < this.viewCacheSize) {
       this._viewCache.push(view);
-      this.extApi.rowsApi.findRowByElement(view.rootNodes[0])._detach();
+      this.extApi.rowsApi.findRowByElement(view.rootNodes[0])?._detach();
       // Notify this row is not part of the view, its cached (however, the component and any child component is not destroyed)
     } else {
       const index = viewContainerRef.indexOf(view);
